@@ -1,0 +1,90 @@
+!!Meta-model entities
+@ch:metamodelEntities
+
+The basic entities of the meta-models are classes and traits. 
+
+!!!Classes
+
+For the meta-model generator, classes are entities with shared behavior that can be instantiated. They are used for description of meta-model elements like ''Package'', ''Method'', ''Class'', ''Table'' etc. We define them in the builder using a message ==newClassNamed:==.
+
+[[[­lan­gua­ge=­Sma­lltalk
+builder := FamixMetamodelBuilder new.
+function := builder newClassNamed: #Function.
+builder generate.
+]]]
+
+They are physically not generated immediately but they are created together with other defined entities when the builder receives message ==#generate==. When the class is defined, the currently valid builder prefix is used for it and stored as a property of the class. Later change of the builder's prefix will not affect the classes that are already defined.
+
+!!!Traits
+
+Traits are independent units of shared behavior. They are very similar to classes but they cannot be instantiated and they are used differently for generalization. Unlike standard Pharo ''traits'' they are stateful. That means that they can hold instance variables (''slots'') so from that perspective, they act as standard Pharo classes (in fact they ''are'' standard Pharo classes).
+
+Because they are stateful, they can provide all the power of classes. But because they usually provide only a small unit of shared behavior, it is handy to place all the meta-model behavior into the traits and let classes to only use them. Then such traits can be easily reused for other meta-models.
+
+Their name usually starts with the character ==T== and they are defined in the builder using a message ==newTraitNamed:==.
+
+[[[­lan­gua­ge=­Sma­lltalk
+tFunction := builder newTraitNamed: #TFunction.
+]]]
+
+!!!Generalization 
+
+When the entities are defined in a builder, generalization relations can be set between them using a binary message ==\<\|\-\-== that tries to look as standard UML generalization arrow.
+
+[[[­lan­gua­ge=­Sma­lltalk
+behaviouralEntity := builder newClassNamed: #BehaviouralEntity.
+function := builder newClassNamed: #Function.
+behaviouralEntity <|-- function.
+]]]
+
+In this case it means that a class ==function== is a subclass of a class ==behaviouralEntity==. Alternatively a keyword message #generalization: can be used with the same result.
+
+[[[­lan­gua­ge=­Sma­lltalk
+function generalization: behaviouralEntity.
+]]]
+
+Becuase ==\<\|\-\-== is a standard binary message, it can be used in a chain
+[[[­lan­gua­ge=­Sma­lltalk
+named <|-- behavior <|-- class
+]]]
+
+Classes can have only one superclass. If no superclass is specified, a default superclass is used. Trais are ''never'' generalizations of other entitities so they have never other than default superclass (''baseTrait''). Their class hierarchy is flat.
+
+!!!Generalization from traits - multiple inheritance
+
+The meta-model classes can be the generalization of only single class but besides that, they can be the generalization of none, one or several traits.
+
+[[[­lan­gua­ge=­Sma­lltalk
+behavior := builder newClassNamed: #Behavior.	
+tBehavior := builder newTraitNamed: #TBehavior
+tBehavior <|-- behavior.
+]]]
+
+This is the way how the multiple inheritance can be expressed in the metamodel. Let's have classes ==A==, ==B== and ==C==. We want ==B== to be sublcass of ==A== and together a subclass ==C==. It cannot be done directly. We neet to make a trait ==TC== that provides all the behavior of the class ==C== and then let ==B== and ==C== use this trait.
+
+[[[­lan­gua­ge=­Sma­lltalk
+a := builder newClassNamed: #A.	
+b := builder newClassNamed: #B.	
+c := builder newClassNamed: #C.
+tc := builder newTraitNamed: #TC.	
+a <|-- b.
+tc <|-- c.
+tc <|-- b.
+]]]
+
+Of course to create a class for ==C== is necessary only in a case when the class ==C== needs to be instantiated. In other cases, you will need only a trait ==TC==
+
+!!!Simple properties
+
+The non-relational properties of meta-model entities are defined using the method #name:type: that accepts as the first argument a symbolic name of the property and as the second argument a name of a type. This type can be any class name but most likely it will be names of primitive types like ==#String==, ==#Number== or ==Boolean==.
+
+[[[­lan­gua­ge=­Sma­lltalk
+namedEntity property: #name type: #String.
+]]]
+
+A comment of the property can be set.
+
+[[[­lan­gua­ge=­Sma­lltalk
+(namedEntity property: #name type: #String)
+    comment: 'This is a comment'.
+]]]

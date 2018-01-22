@@ -1,0 +1,87 @@
+!!Simplified definitions
+
+The meta-model builder provides ways how to make definitions of some common constructs more simple. This chapter will describe them.
+
+!!!Simplified traits generation
+@ch:simplifiedTraitsGeneration
+
+Because traits should be the main providers of the behavior and classes play only role of entities composing traits, the classes offer simple message ==#as:== that can define a trait related to it.
+
+[[[­lan­gua­ge=­Sma­lltalk
+behavior := builder newClassNamed: #Behavior.
+behavior as: #TBehavior.	
+]]]
+
+This code creates a new trait and then sets the class as an user of this new trait. So the code above is equivalent to: 
+
+[[[­lan­gua­ge=­Sma­lltalk
+behavior := builder newClassNamed: #Behavior.
+tBehavior := builder newTraitNamed: #TBehavior.
+tBehavior <|-- behavior
+]]]
+
+In most cases this construct is used for description of relations between properties without need to explicitly create a trait:
+
+[[[­lan­gua­ge=­Sma­lltalk
+method := builder newClassNamed: #Method.	
+comment := builder newClassNamed: #Comment.	
+	
+(method as: #TMethod property: #comments) 
+    -*
+(comment as: #TComment property: #owningMethod).
+]]]
+
+Keep in mind that the object returned by the ==#as:== message is not the trait directly but an alias class. If you want to get the defined trait, you need to send the ==#trait== message to it.
+
+[[[­lan­gua­ge=­Sma­lltalk
+behavior := builder newClassNamed: #Behavior.
+tBehavior := (behavior as: #TBehavior) trait.
+]]]
+
+Of course such trait can then be used by other classes too.
+
+!!!Automatic properties generation
+
+Relations can be defined directly on classes. In that case the corresponding traits are genearated and named automatically. 
+
+[[[­lan­gua­ge=­Sma­lltalk
+access := builder newClassNamed: #Access.	
+variable := builder newClassNamed: #Variable.	
+variable -* access.
+]]]
+
+In this case the traits named ==TAccess== and ==TWithAccesses== are automaticaly generated. The properties in them are defined and named automatically too. The example above is equivalent to the following code:
+
+[[[­lan­gua­ge=­Sma­lltalk
+access := builder newClassNamed: #Access.	
+variable := builder newClassNamed: #Variable.	
+(variable as: #TWithAcceses property: #accesses) 
+	-*
+(access as: #TAccess property: #accessOwner).
+]]]
+
+!!!Associations generation
+@ch:AssociationsGeneration
+
+Often you have in the meta-model a relation of two entities where you want to be able to describe more detailed properties of such relations. For example a variable can be used in a method and you want to be able to model concrete accesses within the method. You want to be able to know where in code the access has place, if it is reading or storing into the variable etc. The meta-model builder provides the method #as:link:througAssociation:link:with: that simplified definition of such relations that are named ''associations''. The message allows you to control names of the properties. It will be more clear from the example:
+
+[[[­lan­gua­ge=­Sma­lltalk
+access := builder newClassNamed: #Access.	
+variable := builder newClassNamed: #Variable.	
+method := builder newClassNamed: #Method.	
+		
+(method as: #TWithAccesses)
+    link: #accesses -> #accessor
+    throughAssociation: (access as: #TAccess) 
+    link: #variable <- #icomingAcesses
+    with: (variable as: #TAccessible).
+]]]
+
+This will generate three traits named ==TWithAccesses==, ==TAccess== and ==TAccessible== and defines two relations between them. A collections of four relation sides are returned as result of this message. It enables to set the other properties of such relations like comments.
+
+[[[­lan­gua­ge=­Sma­lltalk
+sides := (method as:...)
+sides first comment: 'This is a comment'.
+]]]
+
+This code will set the comment of a property named ''accesses'' of the class ==TWithAccesses==. The ==source== and ==target== properties are set automatically.

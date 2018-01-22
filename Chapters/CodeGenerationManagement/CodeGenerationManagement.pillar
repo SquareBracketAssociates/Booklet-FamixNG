@@ -1,0 +1,8 @@
+!!Code generation management
+@ch:codeGenerationManagement
+
+When we want to build our metamodel as extension of some already existing metamodel, we need to know the elements of the existing metamodel but do not generate it.
+
+[[[­lan­gua­ge=­Sma­lltalk
+builder doNotGenerateCurrent.
+]]]
