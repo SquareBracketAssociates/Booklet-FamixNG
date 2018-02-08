@@ -10,3 +10,5 @@ ${inputFile:Chapters/SimplifiedDefinitions/SimplifiedDefinitions.pillar}$
 
 ${inputFile:Chapters/CodeGenerationManagement/CodeGenerationManagement.pillar}$
 
+${inputFile:Chapters/ExampleMetamodel/ExampleMetamodel.pillar}$
+
