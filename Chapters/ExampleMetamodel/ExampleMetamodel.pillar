@@ -103,13 +103,27 @@ defineRelations
 
 This code will for you create the traits named ==TComment== and ==TWithComments==. The first one will by applied on the ''comment'' entity, the second one on the ''entity''. In the ==TWithComments== trait it will create a property named ==comments== and in the ==TComment== trait a property named ==commentOwner==. Then the relationship ''one to many'' will be set between them. 
 
-Now we can start to use our meta-model for something useful.
+Now we can start to use our meta-model for something useful. Firstly we will generate it. This time the way how to do it will be a more complicated because we will want to involve the stateful traits simulation flattening and we will instantiate the Fame meta-model for it. 
 
 [[[­lan­gua­ge=­Sma­lltalk
 generator := DemoStMetamodelGenerator new.
 generator builder traitsFlattening: true.
 generator generate.
 DemoStMetamodelGenerator resetMetamodel.
+]]]
+
+As soon as this code is executed (e.g. from the playground), we can write a little test that will prove that our relationship is working.
+
+[[[­lan­gua­ge=­Sma­lltalk
+| aComment aClass |
+aComment := DemoStComment new content: 'some comment'.
+aClass := DemoStClass new.
+aComment commentOwner: aClass.
+
+self assert: aComment commentOwner = aClass.
+self assert: (aClass comments includes: aComment).
+self assert: (aClass comments size = 1).
+self assert: (aClass comments anyOne content = 'some comment').
 ]]]
 
 
