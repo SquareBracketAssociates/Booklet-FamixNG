@@ -1,0 +1,27 @@
+{
+    "package": {
+        "name": "booklet-famix-ng",
+        "repo": "wip",
+        "subject": "squarebracketassociates",
+        "desc": "Famix",
+        "licenses": ["MIT"],
+        "website_url": "https://github.com/SquareBracketAssociates/Booklet-FamixNG",
+        "issue_tracker_url": "https://github.com/SquareBracketAssociates/Booklet-FamixNG/issues",
+        "vcs_url": "https://github.com/SquareBracketAssociates/Booklet-FamixNG.git",
+        "labels": ["work-in-progress"]
+    },
+
+    "version": {
+        "name": "latest",
+        "desc": "Latest successful build"
+    },
+
+    "files": [
+        {
+            "includePattern": "build/book.pdf",
+            "uploadPattern": "$1-wip.pdf",
+            "matrixParams": { "override": 1 }
+        }
+    ],
+    "publish": true
+}

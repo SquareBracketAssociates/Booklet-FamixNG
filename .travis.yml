@@ -9,4 +9,15 @@ script: |
   docker run --tty --rm --volume $PWD:/work dpollet/texlive:pillar bash -c "\
     wget --quiet --output-document=- 'https://raw.githubusercontent.com/pillar-markup/pillar/master/download.sh' | bash \
     && make book "
+
+deploy:
+- provider: bintray
+  file: .bintray.json
+  on:
+    repo: SquareBracketAssociates/Booklet-FamixNG
+  skip_cleanup: true
+  user: pavel-krivnaek
+  key:
+    secure: o5jtV8PmGpAp/S0Q21y1EKL7h5gF0eJX8lekpBtEj1LkhoUPvtkUkSJBEzsZQVPa7GgE+XCeYfann0MddQdmYOcMz3x2Y2/ZBK4kcwwYvPZbzc0RemSsN8Yl4nT5OQf98H2Elx8QRup2MXFhLfFsuVFqXzpfApK82Wia5er7nWaPW0Abe04kHyu82apqOpoHSeb4MOsXejuMfLykFcu+Gm80tf9dmbfJjE7BPw0oX1h0Xxv1Akc8ZeiiV+m9kx7fQNtHartcPlr9Bli8zGPIwtv9O3FZOF5pOQoOVVPt8nsUb7NXFl1TYACWljuwZSn3bAQjGxnNXQAkVGbo+WF5XUMSJb6D4a7HfZMFB0s5Zrqr5BMdVxzi2HscvdHBXvBjBLHXqVnverqmFpQsFtP8Q4EAwb5wettZVCpr1FLfjWxtzFnOZQ2jSE1pLxr3wuh1bGRXlo+dqEJiAkgOSOCrQ86U4ETwWI4Zgo4IcZ4jL/wblbid1qJjDHrQFgiUGahpRC5oYuB7XCkY8qsxaQXanS1mcmUfs0qNgKrmln25CRckxyyiTTOpzabMNoo/B1ah1FQPmhXxCtxQrg6WvJ6D33AdJt7i0yvCFanlZjpzA7v+Nz9aNDRPAt6LLaUVHXVKLyhncbFOmHjlSEcy30wZe+0dSKMj03RTB2DHMRXldp8=
+
     
