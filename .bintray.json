@@ -2,7 +2,7 @@
     "package": {
         "name": "Booklet-FamixNG",
         "repo": "wip",
-        "subject": "squarebracketassociates",
+        "subject": "pavel-krivanek",
         "desc": "Famix",
         "licenses": ["MIT"],
         "website_url": "https://github.com/SquareBracketAssociates/Booklet-FamixNG",
@@ -18,7 +18,7 @@
 
     "files": [
         {
-            "includePattern": "build/book.pdf",
+            "includePattern": "build/book.spiral.pdf",
             "uploadPattern": "$1-wip.pdf",
             "matrixParams": { "override": 1 }
         }
