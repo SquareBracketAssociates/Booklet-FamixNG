@@ -115,16 +115,66 @@ DemoStMetamodelGenerator resetMetamodel.
 As soon as this code is executed (e.g. from the playground), we can write a little test that will prove that our relationship is working.
 
 [[[­lan­gua­ge=­Sma­lltalk
-| aComment aClass |
-aComment := DemoStComment new content: 'some comment'.
-aClass := DemoStClass new.
-aComment commentOwner: aClass.
+DemoStMetamodelGeneratorTest >> testRelations
 
-self assert: aComment commentOwner = aClass.
-self assert: (aClass comments includes: aComment).
-self assert: (aClass comments size = 1).
-self assert: (aClass comments anyOne content = 'some comment').
+	| aComment aClass aString |
+	aString := 'some comment'.
+	aComment := DemoStComment new content: aString.
+	aClass := DemoStClass new.
+	aComment commentOwner: aClass.
+
+	self assert: aComment commentOwner equals: aClass.
+	self assert: (aClass comments includes: aComment).
+	self assert: aClass comments size equals: 1.
+	self assert: aClass comments anyOne content equals: aString.
 ]]]
+
+As soon we assigned a the class to the comment, the comment was automatically added to the comments collection of the class. 
+
+!!!Usage of standard traits
+
+Our meta-model is not very incomplete. We for example cannot set the name of the class, it is missing most of the relations and so on. Moreover, if you build a model, you will not be able to use most of the advantages of Moose platform because your model classes have almost no tools support. To solve this issues we will start to use some of the standard traits that Famix provides.
+
+The Famix traits are placed in the package named ''FmxNG-Traits''. As the first step we need to tell to your meta-model generator, where to find them. We need to register them into your meta-model builder so. The Famix traits are generated the same way as your meta-model classes - using a generator. We will take this generator and adopt its meta-model builder as base for our own meta-model. To do that we should override a generator's instance side method named ==newBuilder==. In this method we take the builder from the existing generator and tell to him that none of the existing entities should be generated. Builder will know about them but will not create real classes nor traits for them.
+
+[[[­lan­gua­ge=­Sma­lltalk
+DemoStMetamodelGenerator >> newBuilder
+
+	^ (FmxNGGenerator builderWithDefinitions)
+		doNotGenerateCurrent;
+		generator: self;
+		yourself.
+]]]
+
+We will firstly write a test to prove that entities like classes can have a name.
+
+[[[­lan­gua­ge=­Sma­lltalk
+DemoStMetamodelGeneratorTest >> testClassName
+
+	| aClass aString |
+	aString := 'some name'.
+	aClass := DemoStClass new.
+	aClass name: aString.
+	self assert: aClass name equals: aString.
+]]]
+
+Then we can extend our meta-model classes definition (==defineClasses==).
+
+[[[­lan­gua­ge=­Sma­lltalk
+	entity --|> #TNamed.
+]]]
+
+After regenerating of our meta-model we can run our test. By default, when the generator creates the classes for entities, it removes the existing ones. That can cause usage of obsolete classes in code, where these classes were used - like in our tests. To avoid that it may be handy to let regenerate your meta-model without previous cleaning:
+
+[[[­lan­gua­ge=­Sma­lltalk
+generator := DemoStMetamodelGenerator new.
+generator builder traitsFlattening: true.
+generator generateWithoutCleaning.
+DemoStMetamodelGenerator resetMetamodel.
+]]]
+
+Take into account that in that case your generated code can contain some relicts of the previous meta-model generations but in most cases when you only add something to your metamodel it should be safe. 
+
 
 
 
