@@ -173,11 +173,43 @@ generator generateWithoutCleaning.
 DemoStMetamodelGenerator resetMetamodel.
 ]]]
 
-Take into account that in that case your generated code can contain some relicts of the previous meta-model generations but in most cases when you only add something to your metamodel it should be safe. 
+Take into account that in that case your generated code can contain some relicts of the previous meta-model generations but in most cases when you only add something to your meta-model it should be safe. 
 
+Now let's create relationship between method and entities that can hold them. In Smalltalk methods can belong to classes and to packages (extension methods). We will add a standard trait ==TMethod== to the our ''method'' entity and a trait named ==TWithMethods== to the entity ''class''. Then we will say that methods and classes are ''packageable'' and the package uses a trait named ==TPackage==.
 
+[[[­lan­gua­ge=­Sma­lltalk
+	method --|> #TMethod.
+	class --|> #TWithMethods.
+	package --|> #TPackage.
+	class --|> #TPackageable.
+	method --|> #TPackageable.
+]]]
 
+You may ask why the ''package'' does not use the ==TWithMethods== trait too. The pair of traits ==TWithMethods== and ==TMethod== defines relationship ''methods'' - ''parentType''. Of course the package is not a parent type for the method and because method can belong to a class and package simultaneously, it would cause a collision.
 
+With such meta-model we can start to build more complex models.
+
+[[[­lan­gua­ge=­Sma­lltalk
+| model class package1 package2 method1 method2 |
+
+model := MooseModel new
+	metamodel: DemoStMetamodelGenerator metamodel;
+	yourself.
+
+class := DemoStClass new name: #Class1.
+class isStub: false.
+package1 := DemoStPackage new name: #Package1.
+package2 := DemoStPackage new name: #Package2.
+method1 := DemoStMethod new name: #method1.
+method2 := DemoStMethod new name: #method2.
+class parentPackage: package1.
+method1 parentType: class.
+method2 parentType: class.
+method2 parentPackage: package1.
+model addAll: { class. package1. package2. method1. method2 }.
+]]]
+
+Notice that ==isStub== is a property added by the trait ==TNamed==. When we will inspect such model in Moose, the inspector will provide more advanced options like showing all methods in the meta-model, because we used the trait ==TMethod== on some of the elements and thus they are interpreted as methods. 
 
 
 
