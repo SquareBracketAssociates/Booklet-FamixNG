@@ -21,7 +21,7 @@ Then we need to specify what will be the package where the meta-model will be ge
 [[[­lan­gua­ge=­Sma­lltalk
 DemoStMetamodelGenerator class >> packageName
 
-	^ #DemoSmalltalkMetamodel
+	^ #'DemoSmalltalkMetamodel-Generated'
 ]]]
 
 By default the package name is used as the prefix of generated classes but in our case it is too long. So we will create a method ==prefix== on the generator side of the generator that will specify it.
@@ -58,7 +58,7 @@ Then we can try to create the first testing generation of our meta-model:
 DemoStMetamodelGenerator new generate.
 ]]]
 
-Then we can see that the package ==DemoSmalltalkMetamodel== was created. For each entity two classes were created, one with the entity named and specified prefix, the second one with suffix ==Generated==. So for the class entity the class DemoStClass and DemoStClassGenerated was created. The class with the ==Generated== suffix is the superclass of the other. The superclass of MooseEntity.
+Then we can see that the package ==DemoSmalltalkMetamodel-Generated== was created. For each entity two classes were created, one with the entity named and specified prefix, the second one with suffix ==Generated==. So for the class entity the class DemoStClass and DemoStClassGenerated was created. The class with the ==Generated== suffix is the superclass of the other. The superclass of MooseEntity.
 
 Besides the metamodel entities an importing context class was created (==DemoStImportingContext==). It is not important for us now.
 
@@ -205,14 +205,52 @@ method2 := DemoStMethod new name: #method2.
 class parentPackage: package1.
 method1 parentType: class.
 method2 parentType: class.
-method2 parentPackage: package1.
+method2 parentPackage: package2.
 model addAll: { class. package1. package2. method1. method2 }.
 ]]]
 
 Notice that ==isStub== is a property added by the trait ==TNamed==. When we will inspect such model in Moose, the inspector will provide more advanced options like showing all methods in the meta-model, because we used the trait ==TMethod== on some of the elements and thus they are interpreted as methods. 
 
+!!!Custom extensions
 
+As we said, the generator creates for every meta-model entity two classes. One has name with the suffix ''Generated'' and is superclass of the other one. When such pair is created, the generator only checks if the class without suffix already exists and if yes, it stays untouched. That opens possibility to move them to a separate package and extend such classes with own methods or instance variables, if needed. 
 
+We can move the generated class ==DemoStMethod== to a new package (named for example ''DemoSmalltalkMetamodel-Custom'') and then create in it a method ==parentPackage== that will check if an explicit package is set to the method and if not, it will return the package of the class that owns the method.
 
+[[[­lan­gua­ge=­Sma­lltalk
+DemoStMethod >> parentPackage
 
+	^ super parentPackage ifNil: [ self parentType parentPackage ]
+]]]
+
+This way the custom method will not be touched even in case that the meta-model is regenerated. But of course you have full responsibility about keeping such classes and method in synchronization with the generated meta-model.
+
+For proper working of the models you will need add classes from the new package ''DemoSmalltalkMetamodel-Custom'' to your meta-model singleton instance. See FamixMetamodelGenerator class>>#resetMetamodel.
+
+!!!Importing context customization
+
+Together with the classes for the meta-model entities an importing context is created. In our case it is automatically named as ==DemoStImportingContext==. This class will be useful for you as soon as you will start to write or customize an importer for your models. 
+
+The main task we need to do is to set dependencise between the meta-model elements. Simply use the message ==requires:== that accepts a collection of entities required by another entity.
+
+[[[­lan­gua­ge=­Sma­lltalk
+method requires: { class }.
+]]]
+
+Then the an user of an importer of your models can create an related importing context like this:
+
+[[[­lan­gua­ge=­Sma­lltalk
+importerTask importingContext: (DemoStImportingContext new 
+	importPackage;
+	importMethod;
+	yourself).
+]]]
+
+During import of a model then can the importer ask the importing context if the user wanted some data with an expression like this:
+
+[[[­lan­gua­ge=­Sma­lltalk
+self importingContext shouldImportClass
+]]]
+
+In our case the answer will be true because the user asked for importing of the methods and we defined classes as dependencies of methods. The names of methods with prefix ''import'' and ''shouldImport'' are generated automatically.
 
