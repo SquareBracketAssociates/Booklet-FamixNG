@@ -18,7 +18,7 @@
 
     "files": [
         {
-            "includePattern": "build/book.spiral.pdf",
+            "includePattern": "build/(book.spiral).pdf",
             "uploadPattern": "$1-wip.pdf",
             "matrixParams": { "override": 1 }
         }
