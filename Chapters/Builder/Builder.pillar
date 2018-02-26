@@ -32,7 +32,7 @@ builder := FamixMetamodelBuilder new.
 builder generate.
 ]]]
 
-Although the builder instances can be used diretly in a method or in a script that will generate your meta-model, in most cases the builder will be created as an instance variable of a subclass ==FamixMetamodelGenerator== because then the meta-model definition can be split into several methods or classes (see chapter *@ch:codeGenerationManagement*).
+Although the builder instances can be used directly in a method or in a script that will generate your meta-model, in most cases the builder will be created as an instance variable of a subclass ==FamixMetamodelGenerator== because then the meta-model definition can be split into several methods or classes (see chapter *@ch:codeGenerationManagement*).
 
 
 

@@ -1,13 +1,13 @@
 !!Custom metamodel tutorial
 @ch:exampleMetamodel
 
-In this tutorial we will create a simple meta-model. During that we will describe how to create own generator, use predefined traits, extend the meta-model with custom behavior and create models described by this meta-model. 
+In this tutorial, we will create a simple meta-model. During that, we will describe how to create own generator, use predefined traits, extend the meta-model with custom behavior and create models described by this meta-model. 
 
 !!!Preparation
 
 We will start with a prebuilt Moose image based on Pharo 6.1 that you can find on the address *https://ci.inria.fr/moose/view/Moose%206.1/job/FamixNG/lastSuccessfulBuild/artifact/FamixNG.zip*
 
-As the first step we will create a ==FamixMetamodelGenerator== subclass that will describe your meta-model. We will describe a simplified Smalltalk metamodel and our class will be named ==DemoStMetamodelGenerator==. We will place it into a package of the same name. The meta-model, that will be created by this generator, will use a different package.
+As the first step, we will create a ==FamixMetamodelGenerator== subclass that will describe your meta-model. We will describe a simplified Smalltalk metamodel and our class will be named ==DemoStMetamodelGenerator==. We will place it into a package of the same name. The meta-model, that will be created by this generator, will use a different package.
 
 [[[­lan­gua­ge=­Sma­lltalk
 FamixMetamodelGenerator subclass: #DemoStMetamodelGenerator
@@ -24,7 +24,7 @@ DemoStMetamodelGenerator class >> packageName
 	^ #'DemoSmalltalkMetamodel-Generated'
 ]]]
 
-By default the package name is used as the prefix of generated classes but in our case it is too long. So we will create a method ==prefix== on the generator side of the generator that will specify it.
+By default, the package name is used as the prefix of generated classes but in our case it is too long. So we will create a method ==prefix== on the generator side of the generator that will specify it.
 
 [[[­lan­gua­ge=­Sma­lltalk
 DemoStMetamodelGenerator class >> prefix
@@ -58,11 +58,11 @@ Then we can try to create the first testing generation of our meta-model:
 DemoStMetamodelGenerator new generate.
 ]]]
 
-Then we can see that the package ==DemoSmalltalkMetamodel-Generated== was created. For each entity two classes were created, one with the entity named and specified prefix, the second one with suffix ==Generated==. So for the class entity the class DemoStClass and DemoStClassGenerated was created. The class with the ==Generated== suffix is the superclass of the other. The superclass of MooseEntity.
+Then we can see that the package ==DemoSmalltalkMetamodel-Generated== was created. For each entity two classes were created, one with the entity named and specified prefix, the second one with suffix ==Generated==. So for the class entity, the class DemoStClass and DemoStClassGenerated was created. The class with the ==Generated== suffix is the superclass of the other. The superclass of MooseEntity.
 
 Besides the metamodel entities an importing context class was created (==DemoStImportingContext==). It is not important for us now.
 
-In the next step we will specify the classes hierarchy. At the end of the ==defineClasses== method we will add the following code:
+In the next step, we will specify the classes hierarchy. At the end of the ==defineClasses== method we will add the following code:
 
 [[[­lan­gua­ge=­Sma­lltalk
 	entity <|-- package.
@@ -76,7 +76,7 @@ In the next step we will specify the classes hierarchy. At the end of the ==defi
 	variable <|-- parameter.	
 ]]]
 
-The UML description of the class hierarchy is showed on the figure *@figClassHierarchy*
+The UML description of the class hierarchy is showed in the figure *@figClassHierarchy*
 
 +figures/demoSt-classHierarchy.png|label=figClassHierarchy+
 
@@ -91,7 +91,7 @@ defineProperties
 		comment: 'Content of the comment as a String'.
 ]]]
 	  
-In instance side method ==defineProperties== of the generator we defined a string property on the comment entity and added a comment.
+In instance side method ==defineProperties== of the generator, we defined a string property on the comment entity and added a comment.
 
 The comment has a relation to the entities. Classes, methods and packages can be commented. The easiest way how to do that is to create a method ==defineRelations==.
 
@@ -103,7 +103,7 @@ defineRelations
 
 This code will for you create the traits named ==TComment== and ==TWithComments==. The first one will by applied on the ''comment'' entity, the second one on the ''entity''. In the ==TWithComments== trait it will create a property named ==comments== and in the ==TComment== trait a property named ==commentOwner==. Then the relationship ''one to many'' will be set between them. 
 
-Now we can start to use our meta-model for something useful. Firstly we will generate it. This time the way how to do it will be a more complicated because we will want to involve the stateful traits simulation flattening and we will instantiate the Fame meta-model for it. 
+Now we can start to use our meta-model for something useful. Firstly we will generate it. This time the way how to do it will be more complicated because we will want to involve the stateful traits simulation flattening and we will instantiate the Fame meta-model for it. 
 
 [[[­lan­gua­ge=­Sma­lltalk
 generator := DemoStMetamodelGenerator new.
@@ -129,13 +129,13 @@ DemoStMetamodelGeneratorTest >> testRelations
 	self assert: aClass comments anyOne content equals: aString.
 ]]]
 
-As soon we assigned a the class to the comment, the comment was automatically added to the comments collection of the class. 
+As soon we assigned the class to the comment, the comment was automatically added to the comments collection of the class. 
 
 !!!Usage of standard traits
 
-Our meta-model is not very incomplete. We for example cannot set the name of the class, it is missing most of the relations and so on. Moreover, if you build a model, you will not be able to use most of the advantages of Moose platform because your model classes have almost no tools support. To solve this issues we will start to use some of the standard traits that Famix provides.
+Our meta-model is not very incomplete. We, for example, cannot set the name of the class, it is missing most of the relations and so on. Moreover, if you build a model, you will not be able to use most of the advantages of Moose platform because your model classes have almost no tools support. To solve this issues we will start to use some of the standard traits that Famix provides.
 
-The Famix traits are placed in the package named ''FmxNG-Traits''. As the first step we need to tell to your meta-model generator, where to find them. We need to register them into your meta-model builder so. The Famix traits are generated the same way as your meta-model classes - using a generator. We will take this generator and adopt its meta-model builder as base for our own meta-model. To do that we should override a generator's instance side method named ==newBuilder==. In this method we take the builder from the existing generator and tell to him that none of the existing entities should be generated. Builder will know about them but will not create real classes nor traits for them.
+The Famix traits are placed in the package named ''FmxNG-Traits''. As the first step we need to tell to your meta-model generator, where to find them. We need to register them into your meta-model builder so. The Famix traits are generated the same way as your meta-model classes - using a generator. We will take this generator and adopt its meta-model builder as a base for our own meta-model. To do that we should override a generator's instance side method named ==newBuilder==. In this method, we take the builder from the existing generator and tell him that none of the existing entities should be generated. Builder will know about them but will not create real classes nor traits for them.
 
 [[[­lan­gua­ge=­Sma­lltalk
 DemoStMetamodelGenerator >> newBuilder
@@ -175,7 +175,7 @@ DemoStMetamodelGenerator resetMetamodel.
 
 Take into account that in that case your generated code can contain some relicts of the previous meta-model generations but in most cases when you only add something to your meta-model it should be safe. 
 
-Now let's create relationship between method and entities that can hold them. In Smalltalk methods can belong to classes and to packages (extension methods). We will add a standard trait ==TMethod== to the our ''method'' entity and a trait named ==TWithMethods== to the entity ''class''. Then we will say that methods and classes are ''packageable'' and the package uses a trait named ==TPackage==.
+Now let's create a relationship between method and entities that can hold them. In Smalltalk methods can belong to classes and to packages (extension methods). We will add a standard trait ==TMethod== to our ''method'' entity and a trait named ==TWithMethods== to the entity ''class''. Then we will say that methods and classes are ''packageable'' and the package uses a trait named ==TPackage==.
 
 [[[­lan­gua­ge=­Sma­lltalk
 	method --|> #TMethod.
@@ -185,7 +185,7 @@ Now let's create relationship between method and entities that can hold them. In
 	method --|> #TPackageable.
 ]]]
 
-You may ask why the ''package'' does not use the ==TWithMethods== trait too. The pair of traits ==TWithMethods== and ==TMethod== defines relationship ''methods'' - ''parentType''. Of course the package is not a parent type for the method and because method can belong to a class and package simultaneously, it would cause a collision.
+You may ask why the ''package'' does not use the ==TWithMethods== trait too. The pair of traits ==TWithMethods== and ==TMethod== defines relationship ''methods'' - ''parentType''. Of course, the package is not a parent type for the method and because the method can belong to a class and package simultaneously, it would cause a collision.
 
 With such meta-model we can start to build more complex models.
 
@@ -213,7 +213,7 @@ Notice that ==isStub== is a property added by the trait ==TNamed==. When we will
 
 !!!Custom extensions
 
-As we said, the generator creates for every meta-model entity two classes. One has name with the suffix ''Generated'' and is superclass of the other one. When such pair is created, the generator only checks if the class without suffix already exists and if yes, it stays untouched. That opens possibility to move them to a separate package and extend such classes with own methods or instance variables, if needed. 
+As we said, the generator creates for every meta-model entity two classes. One has a name with the suffix ''Generated'' and is superclass of the other one. When such pair is created, the generator only checks if the class without suffix already exists and if yes, it stays untouched. That opens a possibility to move them to a separate package and extend such classes with own methods or instance variables if needed. 
 
 We can move the generated class ==DemoStMethod== to a new package (named for example ''DemoSmalltalkMetamodel-Custom'') and then create in it a method ==parentPackage== that will check if an explicit package is set to the method and if not, it will return the package of the class that owns the method.
 
@@ -223,21 +223,21 @@ DemoStMethod >> parentPackage
 	^ super parentPackage ifNil: [ self parentType parentPackage ]
 ]]]
 
-This way the custom method will not be touched even in case that the meta-model is regenerated. But of course you have full responsibility about keeping such classes and method in synchronization with the generated meta-model.
+This way the custom method will not be touched even in the case that the meta-model is regenerated. But of course, you have full responsibility of keeping such classes and method in synchronization with the generated meta-model.
 
-For proper working of the models you will need add classes from the new package ''DemoSmalltalkMetamodel-Custom'' to your meta-model singleton instance. See FamixMetamodelGenerator class>>#resetMetamodel.
+For proper working of the models, you will need add classes from the new package ''DemoSmalltalkMetamodel-Custom'' to your meta-model singleton instance. See FamixMetamodelGenerator class>>#resetMetamodel.
 
 !!!Importing context customization
 
-Together with the classes for the meta-model entities an importing context is created. In our case it is automatically named as ==DemoStImportingContext==. This class will be useful for you as soon as you will start to write or customize an importer for your models. 
+Together with the classes for the meta-model entities, an importing context is created. In our case, it is automatically named as ==DemoStImportingContext==. This class will be useful for you as soon as you will start to write or customize an importer for your models. 
 
-The main task we need to do is to set dependencise between the meta-model elements. Simply use the message ==requires:== that accepts a collection of entities required by another entity.
+The main task we need to do is to set dependencies between the meta-model elements. Simply use the message ==requires:== that accepts a collection of entities required by another entity.
 
 [[[­lan­gua­ge=­Sma­lltalk
 method requires: { class }.
 ]]]
 
-Then the an user of an importer of your models can create an related importing context like this:
+Then an user of an importer of your models can create a related importing context like this:
 
 [[[­lan­gua­ge=­Sma­lltalk
 importerTask importingContext: (DemoStImportingContext new 
@@ -252,5 +252,5 @@ During import of a model then can the importer ask the importing context if the 
 self importingContext shouldImportClass
 ]]]
 
-In our case the answer will be true because the user asked for importing of the methods and we defined classes as dependencies of methods. The names of methods with prefix ''import'' and ''shouldImport'' are generated automatically.
+In our case, the answer will be true because the user asked for importing of the methods and we defined classes as dependencies of methods. The names of methods with prefix ''import'' and ''shouldImport'' are generated automatically.
 

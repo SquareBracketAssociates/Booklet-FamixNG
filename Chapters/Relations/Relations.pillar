@@ -7,7 +7,7 @@ The main advantage of properties connected with relations lies in their automati
 
 Relations should be always defined on traits.
 
-Properties that are sides of a relations are created with the message #property: sent to an entity. This message accepts a property name as an argument. The are two ways how to connect defined properties. One uses keyword messages that describe cardinality of particular relation sides: 
+Properties that are sides of the relations are created with the message #property: sent to an entity. This message accepts a property name as an argument. The are two ways how to connect defined properties. One uses keyword messages that describe cardinality of particular relation sides: 
 
 [[[­lan­gua­ge=­Sma­lltalk
 (tClass property: #comment) oneToONe: (tComment property: #owningClass).
@@ -57,11 +57,11 @@ Other properties of relations like comments can be set. Such properties are alwa
         comment: 'Accesses to variables made by this behaviour.').
 ]]]
 
-Besides the comment, several other boolena properties can be set: 
+Besides the comment, several other boolean properties can be set: 
 
 - ==container==
 - ==derived==
 - ==source==
 - ==target==
 
-By default all these properties are not assigned to the generated entities.
+By default, all these properties are not assigned to the generated entities.

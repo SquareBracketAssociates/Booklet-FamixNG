@@ -48,7 +48,7 @@ Becuase ==\<\|\-\-== is a standard binary message, it can be used in a chain
 named <|-- behavior <|-- class
 ]]]
 
-Classes can have only one superclass. If no superclass is specified, a default superclass is used. Trais are ''never'' generalizations of other entitities so they have never other than default superclass (''baseTrait''). Their class hierarchy is flat.
+Classes can have only one superclass. If no superclass is specified, a default superclass is used. Trais are ''never'' generalizations of other entities so they have never other than default superclass (''baseTrait''). Their class hierarchy is flat.
 
 !!!Generalization from traits - multiple inheritance
 
@@ -60,7 +60,7 @@ tBehavior := builder newTraitNamed: #TBehavior
 tBehavior <|-- behavior.
 ]]]
 
-This is the way how the multiple inheritance can be expressed in the metamodel. Let's have classes ==A==, ==B== and ==C==. We want ==B== to be sublcass of ==A== and together a subclass ==C==. It cannot be done directly. We neet to make a trait ==TC== that provides all the behavior of the class ==C== and then let ==B== and ==C== use this trait.
+This is the way how the multiple inheritance can be expressed in the metamodel. Let's have classes ==A==, ==B== and ==C==. We want ==B== to be sublcass of ==A== and together a subclass ==C==. It cannot be done directly. We need to make a trait ==TC== that provides all the behavior of the class ==C== and then let ==B== and ==C== use this trait.
 
 [[[­lan­gua­ge=­Sma­lltalk
 a := builder newClassNamed: #A.	
