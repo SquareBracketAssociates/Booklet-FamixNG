@@ -5,7 +5,7 @@ The basic entities of the meta-models are classes and traits.
 
 !!!Classes
 
-For the meta-model generator, classes are entities with shared behavior that can be instantiated. They are used for description of meta-model elements like ''Package'', ''Method'', ''Class'', ''Table'' etc. We define them in the builder using a message ==#newClassNamed:==.
+For the meta-model generator, classes are entities with shared behavior that can be instantiated. They are used for description of meta-model elements like ''Package'', ''Method'', ''Class'', ''Table'' etc. We define them in the builder using a message ==newClassNamed:==.
 
 [[[­lan­gua­ge=­Sma­lltalk
 builder := FamixMetamodelBuilder new.
@@ -13,7 +13,7 @@ function := builder newClassNamed: #Function.
 builder generate.
 ]]]
 
-They are physically not generated immediately but they are created together with other defined entities when the builder receives message ==#generate==. When the class is defined, the currently valid builder prefix is used for it and stored as a property of the class. Later change of the builder's prefix will not affect the classes that are already defined.
+They are physically not generated immediately but they are created together with other defined entities when the builder receives message ==generate==. When the class is defined, the currently valid builder prefix is used for it and stored as a property of the class. Later change of the builder's prefix will not affect the classes that are already defined.
 
 !!!Traits
 
@@ -21,7 +21,7 @@ Traits are independent units of shared behavior. They are very similar to classe
 
 Because they are stateful, they can provide all the power of classes. But because they usually provide only a small unit of shared behavior, it is handy to place all the meta-model behavior into the traits and let classes to only use them. Then such traits can be easily reused for other meta-models.
 
-Their name usually starts with the character ==T== and they are defined in the builder using a message ==#newTraitNamed:==.
+Their name usually starts with the character ==T== and they are defined in the builder using a message ==newTraitNamed:==.
 
 [[[­lan­gua­ge=­Sma­lltalk
 tFunction := builder newTraitNamed: #TFunction.
@@ -37,7 +37,7 @@ function := builder newClassNamed: #Function.
 behaviouralEntity <|-- function.
 ]]]
 
-In this case it means that the class ==Function== is a subclass of the class ==BehaviouralEntity==. Alternatively a keyword message ==#generalization:== can be used with the same result.
+In this case it means that the class ==Function== is a subclass of the class ==BehaviouralEntity==. Alternatively a keyword message ==generalization:== can be used with the same result.
 
 [[[­lan­gua­ge=­Sma­lltalk
 function generalization: behaviouralEntity.
@@ -77,7 +77,7 @@ Of course creating a class for ==C== is necessary only in a case when the class 
 
 !!!Simple properties
 
-The non-relational properties of meta-model entities are defined using the method ==#name:type:== that accepts as the first argument a symbolic name of the property and as the second argument a name of a type. This type can be any class name but most likely it will be the name of a primitive type like ==String==, ==Number==, or ==Boolean==.
+The non-relational properties of meta-model entities are defined using the method ==name:type:== that accepts as the first argument a symbolic name of the property and as the second argument a name of a type. This type can be any class name but most likely it will be the name of a primitive type like ==String==, ==Number==, or ==Boolean==.
 
 [[[­lan­gua­ge=­Sma­lltalk
 namedEntity property: #name type: #String.
