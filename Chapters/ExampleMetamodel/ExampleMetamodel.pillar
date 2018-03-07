@@ -60,6 +60,8 @@ DemoStMetamodelGenerator new generate.
 
 Then we can see that the package ==DemoSmalltalkMetamodel-Generated== was created. For each entity two classes were created, one with the entity named and specified prefix, the second one with suffix ==Generated==. So for the class entity, the class DemoStClass and DemoStClassGenerated was created. The class with the ==Generated== suffix is the superclass of the other. The superclass of MooseEntity.
 
+On the class side of the generator class, you can create a method named ==packageNameForUserClasses== that will return name of the package, where the user classes (the classes without suffix ==Generated==) will be placed. You can place custom code into souch classes and during the next regeneration of the meta-model, they will stay untouched. By default, both classes are placed in the same package.
+
 Besides the metamodel entities an importing context class was created (==DemoStImportingContext==). It is not important for us now.
 
 In the next step, we will specify the classes hierarchy. At the end of the ==defineClasses== method we will add the following code:
