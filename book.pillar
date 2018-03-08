@@ -1,5 +1,7 @@
 !Metamodel Builder
 
+${inputFile:Chapters/Introduction/Introduction.pillar}$
+
 ${inputFile:Chapters/Builder/Builder.pillar}$
 
 ${inputFile:Chapters/MetamodelEntities/MetamodelEntities.pillar}$

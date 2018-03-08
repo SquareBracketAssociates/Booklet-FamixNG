@@ -1,19 +1,19 @@
 !!Relations
 @ch:relations
 
-Very often the meta-model entities contain properties that are in some kind of relation. For example, we have an entity for class comments and an entity for classes. Classes have a reference on their class comments and the class comments have a reference on owning classes. In such casses we connect such properties into a relation.
+Very often the meta-model entities contain properties that are in some kind of relation. For example, we have an entity for class comments and an entity for classes. Classes have a reference on their class comments and the class comments have a reference on owning classes. In such cases we connect such properties into a relation.
 
-The main advantage of properties connected with relations lies in their automatic updates. When you set a comment for a class, such comment will automatically assign the owning class. 
+The main advantage of properties connected with relations lies in their automatic updates. When you assign a comment to a class, the class is automatically assigned to the comment. 
 
 Relations should be always defined on traits.
 
-Properties that are sides of the relations are created with the message #property: sent to an entity. This message accepts a property name as an argument. The are two ways how to connect defined properties. One uses keyword messages that describe cardinality of particular relation sides: 
+Properties that are sides of the relations are created with the message ==property:== sent to an entity. This message accepts a property name as an argument. The are two ways how to connect defined properties. One uses keyword messages that describe cardinality of particular relation sides: 
 
 [[[­lan­gua­ge=­Sma­lltalk
 (tClass property: #comment) oneToONe: (tComment property: #owningClass).
 ]]]
 
-The second one uses binary messages that try to be sililar to UML connectors:
+The second one uses binary messages that tries to be similar to UML connectors:
 
 [[[­lan­gua­ge=­Sma­lltalk
 tClass := builder newTraitNamed: #TClass. 
@@ -34,7 +34,7 @@ Every relation keyword message has an alternative binary message.
 
 !!!Cardinality - aggregation
 
-We can describe the aggregation relation too by specifying which side of the relation is a container using similar messages like in case of the standard relations. For the binary messages the "diamond" is always on a side of the owner. 
+We can describe the aggregation relationship too by specifying which side of the relation is a container using similar messages like in case of the standard relations. For the binary messages the "diamond" is always on the side of the owner. 
 
 |!binary |!keyword
 | ==<>-== | ==containsOne:==
@@ -46,7 +46,7 @@ Notice that there is no many-to-many aggregation relation.
 
 !!!Properties of relations
 
-Other properties of relations like comments can be set. Such properties are always valid only for a particular side of the relation.
+Other properties  can be set on the relations,for example to comment them. Such properties are always valid only for a particular side of the relation.
 
 [[[­lan­gua­ge=­Sma­lltalk
 ((tAccess property: #accessor)

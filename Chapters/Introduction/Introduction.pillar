@@ -1,0 +1,135 @@
+!!Introduction
+
+!!!Rational
+@ch:ngRational
+
+The idea behind FamixNG is to allow the creation of meta-models by composing basic entities rather than using single inheritance.
+
+Take for example a simple model with Classes and Methods. A Class has a ''name'' and ''contains'' methods. A Method has a ''name''. We can create a simple hirarchy:
+-NamedEntity
+--ContainerEntity
+---Class
+--Method
+
+But if we introduce AnonymousClass we have a problem, it is a Class (thus a ContainerEntity, but it is not Named).
+With composition we could say that there are named entities (that have a name) and there are container entities (that contain other entities). A Class is composed of NamedEntity and ContainerEntity, an AnonymousClass is a composition of ContainerEntity, and a Method is composition of NamedEntity.
+
+FamixNg offers a collection of basic concepts (NamedEntities, ScopingEntities, ...) and a better mechanism to handle bi-directional associations to simplify the creation of new meta-models.
+
+!!!General Organisation
+@ch:ngPhilosophy
+
+The composition is implemented using Pharo (stateful) traits, and the concepts of the meta-model are implemented using Pharo classes.
+A new metamodel is generated using a *@Builder>ch:Builder* by telling it how the new concepts will be composed and what are their relationships.
+
+Because one may want to add behaviour to the generated Pharo classes, there is always two classes for each concept, the ''generated'' one, and the ''visible'' (or used) one.
+Thus if one whishes to have a NamedEntity, there will be a NamedEntityGenerated Pharo class, containing all the properties specified to  the builder, and a NamedEntity pharo class inheriting from the first to which one may add new methods.
+Each time the builder will (re-)generate the meta-model classes, it will overwrite the NamedEntityGenerated class, but it will not touch the NamedEntity and its methods.
+
+The same goes for the traits used to create composable basic entities, there is a generated trait and a used one.
+
+This may seem a bit complex as for a single entity that one whishes to create, there can be two Pharo traits and two Pharo classes created: The "generated" trait, the "used" trait (inheriting from the first one), the "generated" class (using the second trait), and the "used" class (inheriting from the first class).
+But you should not need to remember all this as the syntax of the meta-model building is intended to hide these details from you.
+Also remeber that traits are needed only if you want to create a compasable basic entity that will be reused to create several concepts in the future.
+For basic uses, one should be able to create a new meta-model by composing the existing basic entities without the need to create new ones.
+
+!!!Catalog of Concepts
+@ch:ngCatalog
+
+-TAnnotationInstance
+-TInvocation
+-TEnumValue
+-TWithImplicitVariables
+-TFunction
+-TCompilationUnit
+-TAccessible
+-TWithAttributes
+-TWithTypes
+-TType
+-TException
+-TPackage
+-TAccess
+-TWithModule
+-TSub
+-TWithNamespaces
+-TWithThrownExceptions
+-TTemplateUser
+-TWithMethods
+-TWithReferences
+-TModule
+-TWithAnnotationInstanceAttributes
+-TWithComments
+-TSourceLanguage
+-TImplicitVariable
+-TTypeAlias
+-TWithAnnotationTypes
+-TWithTemplates
+-TWithSourceLanguage
+-TPreprocessorIfdef
+-TWithPackages
+-TReference
+-TFileAnchor
+-TLocalVariable
+-TWithSuperInheritances
+-TParameter
+-TWithTypeAliases
+-TPackageable
+-TSubInheritance
+-TWithFunctions
+-TWithParameterizedTypeUsers
+-TSuperInheritance
+-TWithDeclaredExceptions
+-TNamespaceEntity
+-TTypedAnnotationInstanceAttribute
+-TWithFileInclude
+-TNamespace
+-TTypedStructure
+-TWithHeader
+-TWithParameterizedTypes
+-TAttribute
+-TInvocationsReceiver
+-TWithInvocations
+-TComment
+-TWithClassScope
+-TWithAnnotationInstances
+-TWithAccesses
+-TInvocable
+-TWithCompilationUnit
+-TWithSourceAnchor
+-TWithSubInheritances
+-TAssociation
+-TThrownException
+-TWithDereferencedInvocations
+-TTemplate
+-TWithTypedStructures
+-TParameterizedType
+-TFileInclude
+-TWithModifiers
+-TSuper
+-TWithSignature
+-TGlobalVariableScope
+-TAnnotationType
+-TFile
+-TAnnotationTypeAttribute
+-TWithParameters
+-TWithFiles
+-TWithTrait
+-TScopingEntity
+-TSourceAnchor
+-TDeclaredException
+-TPreprocessorDefine
+-TWithLocalVariables
+-THeader
+-TTrait
+-TWithEnumValues
+-TCaughtException
+-TAnnotationInstanceAttribute
+-TMethod
+-TGlobalVariable
+-TReferenceable
+-TParameterizedTypeUser
+-TNamed
+-TWithExceptions
+-TTypedAnnotationInstance
+-TWithCaughtExceptions
+-TDereferencedInvocation
