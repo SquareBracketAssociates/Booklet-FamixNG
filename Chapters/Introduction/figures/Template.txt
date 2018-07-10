@@ -1,0 +1,14 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class Template << (T,orchid) >> {
+ }
+class WithTemplates << (T,orchid) >> {
+ }
+class TemplateUser << (T,orchid) >> {
+ }
+Template "* templates" -- "templateOwner" WithTemplates
+Template "template" -- "* templateUsers" TemplateUser
+@enduml

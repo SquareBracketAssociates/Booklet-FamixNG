@@ -1,0 +1,14 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class TypedAnnotationInstance << (T,orchid) >> {
+ }
+class WithAnnotationTypes << (T,orchid) >> {
+ }
+class AnnotationType << (T,orchid) >> {
+ }
+TypedAnnotationInstance "* instances" --o "annotationType" AnnotationType
+WithAnnotationTypes "annotationTypesContainer" o-- "* definedAnnotationTypes" AnnotationType
+@enduml

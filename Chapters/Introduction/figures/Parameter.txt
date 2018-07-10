@@ -1,0 +1,12 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class Parameter << (T,orchid) >> {
+ }
+class WithParameters << (T,orchid) >> {
+	+numberOfParameters()
+ }
+Parameter "* parameters" --o "parentBehaviouralEntity" WithParameters
+@enduml

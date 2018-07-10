@@ -1,0 +1,12 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class AnnotationInstanceAttribute << (T,orchid) >> {
+	+value
+ }
+class WithAnnotationInstanceAttributes << (T,orchid) >> {
+ }
+AnnotationInstanceAttribute "* attributes" --o "parentAnnotationInstance" WithAnnotationInstanceAttributes
+@enduml

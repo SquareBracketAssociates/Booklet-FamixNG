@@ -1,0 +1,12 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithSourceAnchor << (T,orchid) >> {
+	+numberOfLinesOfCodeWithMoreThanOneCharacter()
+ }
+class SourceAnchor << (T,orchid) >> {
+ }
+WithSourceAnchor "element" o-- "sourceAnchor" SourceAnchor
+@enduml

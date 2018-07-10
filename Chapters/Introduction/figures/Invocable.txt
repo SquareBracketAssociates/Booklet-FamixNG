@@ -1,0 +1,17 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class Invocation << (T,orchid) >> {
+ }
+class InvocationsReceiver << (T,orchid) >> {
+ }
+class Invocable << (T,orchid) >> {
+ }
+class WithInvocations << (T,orchid) >> {
+ }
+Invocation "* incomingInvocations" -- "* candidates" Invocable
+Invocation "* receivingInvocations" -- "receiver" InvocationsReceiver
+Invocation "* outgoingInvocations" -- "sender" WithInvocations
+@enduml

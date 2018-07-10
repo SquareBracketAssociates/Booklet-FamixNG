@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithParameterizedTypes << (T,orchid) >> {
+ }
+class ParameterizedType << (T,orchid) >> {
+ }
+WithParameterizedTypes "parameterizableClass" -- "* parameterizedTypes" ParameterizedType
+@enduml

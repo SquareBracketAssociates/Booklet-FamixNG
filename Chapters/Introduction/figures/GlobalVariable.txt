@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class GlobalVariable << (T,orchid) >> {
+ }
+class GlobalVariableScope << (T,orchid) >> {
+ }
+GlobalVariable "* globalVariables" --o "parentScope" GlobalVariableScope
+@enduml

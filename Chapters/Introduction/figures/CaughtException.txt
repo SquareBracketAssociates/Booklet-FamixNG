@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class CaughtException << (T,orchid) >> {
+ }
+class WithCaughtExceptions << (T,orchid) >> {
+ }
+CaughtException "* caughtExceptions" -- "definingEntity" WithCaughtExceptions
+@enduml

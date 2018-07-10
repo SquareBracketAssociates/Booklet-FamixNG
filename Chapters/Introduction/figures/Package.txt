@@ -1,0 +1,14 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class Packageable << (T,orchid) >> {
+ }
+class Package << (T,orchid) >> {
+ }
+class WithPackages << (T,orchid) >> {
+ }
+Packageable "* childEntities" --o "parentPackage" Package
+Package "* packages" -- "packageOwner" WithPackages
+@enduml

@@ -1,0 +1,41 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class ClassMetrics << (T,orchid) >> {
+	+numberOfPublicMethods()
+	+numberOfPrivateAttributes()
+	+numberOfMethodsOverriden()
+	+numberOfRevealedAttributes()
+	+numberOfMethodsInherited()
+	+numberOfAccessesToForeignData()
+	+numberOfDirectSubclasses()
+	+weightedMethodCount()
+	+numberOfProtectedMethods()
+	+hierarchyNestingLevel()
+	+numberOfMessageSends()
+	+tightClassCohesion()
+	+numberOfMethodsInHierarchy()
+	+numberOfDuplicatedLinesOfCodeInternally()
+	+numberOfAbstractMethods()
+	+numberOfPrivateMethods()
+	+weightOfAClass()
+	+numberOfMethodProtocols()
+	+numberOfMethodsAdded()
+	+numberOfAccessorMethods()
+	+numberOfParents()
+	+numberOfAnnotationInstances()
+	+numberOfAttributesInherited()
+	+subclassHierarchyDepth()
+	+numberOfSubclasses()
+	+numberOfPublicAttributes()
+	+fanIn()
+	+numberOfProtectedAttributes()
+	+totalNumberOfChildren()
+	+fanOut()
+	+numberOfConstructorMethods()
+	+numberOfLinesOfCode()
+	+numberOfStatements()
+ }
+@enduml

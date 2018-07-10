@@ -1,0 +1,12 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithAttributes << (T,orchid) >> {
+	+numberOfAttributes()
+ }
+class Attribute << (T,orchid) >> {
+ }
+WithAttributes "parentType" o-- "* attributes" Attribute
+@enduml

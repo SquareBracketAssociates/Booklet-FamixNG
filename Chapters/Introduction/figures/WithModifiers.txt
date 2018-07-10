@@ -1,0 +1,15 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithModifiers << (T,orchid) >> {
+	+isFinal()
+	+modifiers
+	+isProtected()
+	+isPrivate()
+	+isAbstract()
+	+isPackage()
+	+isPublic()
+ }
+@enduml

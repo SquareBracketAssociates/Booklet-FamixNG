@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithFunctions << (T,orchid) >> {
+ }
+class Function << (T,orchid) >> {
+ }
+WithFunctions "functionOwner" o-- "* functions" Function
+@enduml

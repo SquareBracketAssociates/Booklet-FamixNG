@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="143px" preserveAspectRatio="none" style="width:347px;height:143px;" version="1.1" viewBox="0 0 347 143" width="347px" zoomAndPan="magnify"><defs/><g><!--class WithParameterizedTypeUsers--><rect fill="#FFFFFF" height="32" id="WithParameterizedTypeUsers" style="stroke: #383838; stroke-width: 1.5;" width="214" x="122" y="8"/><ellipse cx="137" cy="24" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M137.8438,30.75 L135.3906,30.75 L135.3906,20.5 L132.25,20.5 L132.25,18.3594 L140.9844,18.3594 L140.9844,20.5 L137.8438,20.5 L137.8438,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="182" x="151" y="28.1543">WithParameterizedTypeUsers</text><!--class ParameterizedTypeUser--><rect fill="#FFFFFF" height="32" id="ParameterizedTypeUser" style="stroke: #383838; stroke-width: 1.5;" width="180" x="139" y="100"/><ellipse cx="154" cy="116" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M154.8438,122.75 L152.3906,122.75 L152.3906,112.5 L149.25,112.5 L149.25,110.3594 L157.9844,110.3594 L157.9844,112.5 L154.8438,112.5 L154.8438,122.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="148" x="168" y="120.1543">ParameterizedTypeUser</text><!--link WithParameterizedTypeUsers to ParameterizedTypeUser--><path d="M229,40.2673 C229,56.9175 229,83.3974 229,99.9582 " fill="none" id="WithParameterizedTypeUsers-ParameterizedTypeUser" style="stroke: #383838; stroke-width: 1.0;"/><ellipse cx="-24.0406" cy="55.4971" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="212" x="-18.5406" y="59.9312">argumentsInParameterizedTypes</text><ellipse cx="139.5781" cy="84.5213" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="145.0781" y="88.9554">arguments</text><!--
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {
+	BackgroundColor White
+}
+hide empty members
+class WithParameterizedTypeUsers << (T,orchid) >> {
+ }
+class ParameterizedTypeUser << (T,orchid) >> {
+ }
+WithParameterizedTypeUsers "* argumentsInParameterizedTypes" - - "* arguments" ParameterizedTypeUser
+@enduml
+
+PlantUML version 1.2018.08(Sun Jun 24 14:31:00 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK Server VM
+Java Version: 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+Operating System: Linux
+OS Version: 4.4.0-121-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

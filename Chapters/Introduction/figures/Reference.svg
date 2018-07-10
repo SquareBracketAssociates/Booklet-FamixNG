@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="143px" preserveAspectRatio="none" style="width:366px;height:143px;" version="1.1" viewBox="0 0 366 143" width="366px" zoomAndPan="magnify"><defs/><g><!--class Referenceable--><rect fill="#FFFFFF" height="32" id="Referenceable" style="stroke: #383838; stroke-width: 1.5;" width="123" x="32.0376" y="8"/><ellipse cx="47.0376" cy="24" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M47.8814,30.75 L45.4282,30.75 L45.4282,20.5 L42.2876,20.5 L42.2876,18.3594 L51.022,18.3594 L51.022,20.5 L47.8814,20.5 L47.8814,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="91" x="61.0376" y="28.1543">Referenceable</text><!--class WithReferences--><rect fill="#FFFFFF" height="32" id="WithReferences" style="stroke: #383838; stroke-width: 1.5;" width="130" x="190.538" y="8"/><ellipse cx="205.538" cy="24" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M206.3818,30.75 L203.9286,30.75 L203.9286,20.5 L200.788,20.5 L200.788,18.3594 L209.5224,18.3594 L209.5224,20.5 L206.3818,20.5 L206.3818,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="219.538" y="28.1543">WithReferences</text><!--class Reference--><rect fill="#FFFFFF" height="32" id="Reference" style="stroke: #383838; stroke-width: 1.5;" width="96" x="126.538" y="100"/><ellipse cx="141.538" cy="116" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M142.3818,122.75 L139.9286,122.75 L139.9286,112.5 L136.788,112.5 L136.788,110.3594 L145.5224,110.3594 L145.5224,112.5 L142.3818,112.5 L142.3818,122.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="155.538" y="120.1543">Reference</text><!--link Referenceable to Reference--><path d="M107.2782,40.2673 C122.263,56.9175 146.095,83.3974 161,99.9582 " fill="none" id="Referenceable-Reference" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="39" x="66.4424" y="59.9312">target</text><ellipse cx="-2.2162" cy="84.5213" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="129" x="3.2838" y="88.9554">incomingReferences</text><!--link WithReferences to Reference--><path d="M241.797,40.2673 C226.812,56.9175 202.98,83.3974 188.075,99.9582 " fill="none" id="WithReferences-Reference" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="43" x="187.5639" y="59.9312">source</text><ellipse cx="221.9471" cy="84.5213" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="127" x="227.4471" y="88.9554">outgoingReferences</text><!--
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {
+	BackgroundColor White
+}
+hide empty members
+class Referenceable << (T,orchid) >> {
+ }
+class WithReferences << (T,orchid) >> {
+ }
+class Reference << (T,orchid) >> {
+ }
+Referenceable "target" - - "* incomingReferences" Reference
+WithReferences "source" - - "* outgoingReferences" Reference
+@enduml
+
+PlantUML version 1.2018.08(Sun Jun 24 14:31:00 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK Server VM
+Java Version: 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+Operating System: Linux
+OS Version: 4.4.0-121-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

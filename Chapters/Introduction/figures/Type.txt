@@ -1,0 +1,20 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class Type << (T,orchid) >> {
+ }
+class TraitUsage << (T,orchid) >> {
+ }
+class WithTypes << (T,orchid) >> {
+ }
+class WithTrait << (T,orchid) >> {
+ }
+class Trait << (T,orchid) >> {
+ }
+Type "user" -- "* outgoingTraitUsages" TraitUsage
+Type "* types" --o "typeContainer" WithTypes
+TraitUsage "* incomingTraitUsages" -- "trait" Trait
+WithTrait "traitOwner" -- "* traits" Trait
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class SourceLanguage << (T,orchid) >> {
+ }
+class WithSourceLanguage << (T,orchid) >> {
+ }
+SourceLanguage "declaredSourceLanguage" -- "* sourcedEntities" WithSourceLanguage
+@enduml

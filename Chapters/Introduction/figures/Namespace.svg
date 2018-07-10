@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="143px" preserveAspectRatio="none" style="width:365px;height:143px;" version="1.1" viewBox="0 0 365 143" width="365px" zoomAndPan="magnify"><defs/><g><!--class WithNamespaces--><rect fill="#FFFFFF" height="32" id="WithNamespaces" style="stroke: #383838; stroke-width: 1.5;" width="140" x="36.072" y="8"/><ellipse cx="51.072" cy="24" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M51.9158,30.75 L49.4626,30.75 L49.4626,20.5 L46.322,20.5 L46.322,18.3594 L55.0564,18.3594 L55.0564,20.5 L51.9158,20.5 L51.9158,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="108" x="65.072" y="28.1543">WithNamespaces</text><!--class NamespaceEntity--><rect fill="#FFFFFF" height="32" id="NamespaceEntity" style="stroke: #383838; stroke-width: 1.5;" width="141" x="211.572" y="8"/><ellipse cx="226.572" cy="24" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M227.4158,30.75 L224.9626,30.75 L224.9626,20.5 L221.822,20.5 L221.822,18.3594 L230.5564,18.3594 L230.5564,20.5 L227.4158,20.5 L227.4158,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="109" x="240.572" y="28.1543">NamespaceEntity</text><!--class Namespace--><rect fill="#FFFFFF" height="32" id="Namespace" style="stroke: #383838; stroke-width: 1.5;" width="106" x="141.072" y="100"/><ellipse cx="156.072" cy="116" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M156.9158,122.75 L154.4626,122.75 L154.4626,112.5 L151.322,112.5 L151.322,110.3594 L160.0564,110.3594 L160.0564,112.5 L156.9158,112.5 L156.9158,122.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="74" x="170.072" y="120.1543">Namespace</text><!--link WithNamespaces to Namespace--><path d="M121,40.2673 C137.28,56.9175 163.172,83.3974 179.364,99.9582 " fill="none" id="WithNamespaces-Namespace" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="115" x="-7.5698" y="59.9312">namespaceOwner</text><ellipse cx="70.8244" cy="84.5213" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="76.3244" y="88.9554">namespaces</text><!--link NamespaceEntity to Namespace--><path d="M267.144,40.2673 C250.864,56.9175 224.972,83.3974 208.78,99.9582 " fill="none" id="NamespaceEntity-Namespace" style="stroke: #383838; stroke-width: 1.0;"/><ellipse cx="169.5484" cy="55.6444" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="175.0484" y="60.0785">namespaceEntities</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="119" x="234.289" y="88.9554">parentNamespace</text><!--
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {
+	BackgroundColor White
+}
+hide empty members
+class WithNamespaces << (T,orchid) >> {
+ }
+class NamespaceEntity << (T,orchid) >> {
+ }
+class Namespace << (T,orchid) >> {
+ }
+WithNamespaces "namespaceOwner" - - "* namespaces" Namespace
+NamespaceEntity "* namespaceEntities" - - "parentNamespace" Namespace
+@enduml
+
+PlantUML version 1.2018.08(Sun Jun 24 14:31:00 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK Server VM
+Java Version: 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+Operating System: Linux
+OS Version: 4.4.0-121-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

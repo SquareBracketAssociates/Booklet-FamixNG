@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class FileAnchor << (T,orchid) >> {
+	+correspondingFile
+	+fileName
+	+encoding
+ }
+@enduml

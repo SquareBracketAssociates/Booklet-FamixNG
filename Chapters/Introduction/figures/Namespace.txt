@@ -1,0 +1,14 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithNamespaces << (T,orchid) >> {
+ }
+class NamespaceEntity << (T,orchid) >> {
+ }
+class Namespace << (T,orchid) >> {
+ }
+WithNamespaces "namespaceOwner" -- "* namespaces" Namespace
+NamespaceEntity "* namespaceEntities" -- "parentNamespace" Namespace
+@enduml

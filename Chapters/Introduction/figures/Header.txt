@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithHeader << (T,orchid) >> {
+ }
+class Header << (T,orchid) >> {
+ }
+WithHeader "headerOwner" -- "header" Header
+@enduml

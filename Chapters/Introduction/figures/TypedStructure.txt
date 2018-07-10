@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class TypedStructure << (T,orchid) >> {
+ }
+class WithTypedStructures << (T,orchid) >> {
+ }
+TypedStructure "* structuresWithDeclaredType" -- "declaredType" WithTypedStructures
+@enduml

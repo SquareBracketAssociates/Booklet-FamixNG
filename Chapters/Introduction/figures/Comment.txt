@@ -1,0 +1,13 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithComments << (T,orchid) >> {
+	+numberOfComments()
+ }
+class Comment << (T,orchid) >> {
+	+content
+ }
+WithComments "container" -- "* comments" Comment
+@enduml

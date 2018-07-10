@@ -1,0 +1,22 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class Access << (T,orchid) >> {
+	+isReadWriteUnknown()
+	+isWrite()
+	+isRead()
+ }
+class Accessible << (T,orchid) >> {
+	+numberOfAccessingMethods()
+	+numberOfGlobalAccesses()
+	+numberOfLocalAccesses()
+	+numberOfAccessingClasses()
+	+numberOfAccesses()
+ }
+class WithAccesses << (T,orchid) >> {
+ }
+Access "* accesses" -- "accessor" WithAccesses
+Access "* incomingAccesses" -- "variable" Accessible
+@enduml

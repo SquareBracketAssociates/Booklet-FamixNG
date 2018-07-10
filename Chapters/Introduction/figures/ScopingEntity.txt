@@ -1,0 +1,9 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class ScopingEntity << (T,orchid) >> {
+ }
+ScopingEntity "parentScope" o-- "* childScopes" ScopingEntity
+@enduml

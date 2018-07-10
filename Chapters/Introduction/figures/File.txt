@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithFiles << (T,orchid) >> {
+ }
+class File << (T,orchid) >> {
+ }
+WithFiles "entities" -- "* containerFiles" File
+@enduml

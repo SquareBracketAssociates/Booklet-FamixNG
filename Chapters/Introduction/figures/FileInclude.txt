@@ -1,0 +1,12 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class FileInclude << (T,orchid) >> {
+ }
+class WithFileInclude << (T,orchid) >> {
+ }
+FileInclude "* outgoingIncludeRelations" -- "source" WithFileInclude
+FileInclude "* incomingIncludeRelations" -- "target" WithFileInclude
+@enduml

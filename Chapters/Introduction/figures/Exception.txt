@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class Exception << (T,orchid) >> {
+ }
+class WithExceptions << (T,orchid) >> {
+ }
+Exception "* exceptions" -- "exceptionClass" WithExceptions
+@enduml

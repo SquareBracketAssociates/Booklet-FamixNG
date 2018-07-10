@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="143px" preserveAspectRatio="none" style="width:174px;height:143px;" version="1.1" viewBox="0 0 174 143" width="174px" zoomAndPan="magnify"><defs/><g><!--class WithFiles--><rect fill="#FFFFFF" height="32" id="WithFiles" style="stroke: #383838; stroke-width: 1.5;" width="87" x="76.5" y="8"/><ellipse cx="91.5" cy="24" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M92.3438,30.75 L89.8906,30.75 L89.8906,20.5 L86.75,20.5 L86.75,18.3594 L95.4844,18.3594 L95.4844,20.5 L92.3438,20.5 L92.3438,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="55" x="105.5" y="28.1543">WithFiles</text><!--class File--><rect fill="#FFFFFF" height="32" id="File" style="stroke: #383838; stroke-width: 1.5;" width="53" x="93.5" y="100"/><ellipse cx="108.5" cy="116" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M109.3438,122.75 L106.8906,122.75 L106.8906,112.5 L103.75,112.5 L103.75,110.3594 L112.4844,110.3594 L112.4844,112.5 L109.3438,112.5 L109.3438,122.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="21" x="122.5" y="120.1543">File</text><!--link WithFiles to File--><path d="M120,40.2673 C120,56.9175 120,83.3974 120,99.9582 " fill="none" id="WithFiles-File" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="47" x="65.5094" y="59.9312">entities</text><ellipse cx="9.4844" cy="84.5213" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="88" x="14.9844" y="88.9554">containerFiles</text><!--
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {
+	BackgroundColor White
+}
+hide empty members
+class WithFiles << (T,orchid) >> {
+ }
+class File << (T,orchid) >> {
+ }
+WithFiles "entities" - - "* containerFiles" File
+@enduml
+
+PlantUML version 1.2018.08(Sun Jun 24 14:31:00 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK Server VM
+Java Version: 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+Operating System: Linux
+OS Version: 4.4.0-121-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="235px" preserveAspectRatio="none" style="width:466px;height:235px;" version="1.1" viewBox="0 0 466 235" width="466px" zoomAndPan="magnify"><defs/><g><!--class Type--><rect fill="#FFFFFF" height="32" id="Type" style="stroke: #383838; stroke-width: 1.5;" width="61" x="188.469" y="8"/><ellipse cx="203.469" cy="24" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M204.3128,30.75 L201.8596,30.75 L201.8596,20.5 L198.719,20.5 L198.719,18.3594 L207.4534,18.3594 L207.4534,20.5 L204.3128,20.5 L204.3128,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="217.469" y="28.1543">Type</text><!--class TraitUsage--><rect fill="#FFFFFF" height="32" id="TraitUsage" style="stroke: #383838; stroke-width: 1.5;" width="100" x="102.9693" y="100"/><ellipse cx="117.9693" cy="116" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M118.8131,122.75 L116.3599,122.75 L116.3599,112.5 L113.2193,112.5 L113.2193,110.3594 L121.9537,110.3594 L121.9537,112.5 L118.8131,112.5 L118.8131,122.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="68" x="131.9693" y="120.1543">TraitUsage</text><!--class WithTypes--><rect fill="#FFFFFF" height="32" id="WithTypes" style="stroke: #383838; stroke-width: 1.5;" width="95" x="238.469" y="100"/><ellipse cx="253.469" cy="116" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M254.3128,122.75 L251.8596,122.75 L251.8596,112.5 L248.719,112.5 L248.719,110.3594 L257.4534,110.3594 L257.4534,112.5 L254.3128,112.5 L254.3128,122.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="267.469" y="120.1543">WithTypes</text><!--class WithTrait--><rect fill="#FFFFFF" height="32" id="WithTrait" style="stroke: #383838; stroke-width: 1.5;" width="87" x="368.469" y="100"/><ellipse cx="383.469" cy="116" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M384.3128,122.75 L381.8596,122.75 L381.8596,112.5 L378.719,112.5 L378.719,110.3594 L387.4534,110.3594 L387.4534,112.5 L384.3128,112.5 L384.3128,122.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="55" x="397.469" y="120.1543">WithTrait</text><!--class Trait--><rect fill="#FFFFFF" height="32" id="Trait" style="stroke: #383838; stroke-width: 1.5;" width="60" x="251.969" y="192"/><ellipse cx="266.969" cy="208" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M267.8128,214.75 L265.3596,214.75 L265.3596,204.5 L262.219,204.5 L262.219,202.3594 L270.9534,202.3594 L270.9534,204.5 L267.8128,204.5 L267.8128,214.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="28" x="280.969" y="212.1543">Trait</text><!--link Type to TraitUsage--><path d="M207.773,40.267 C195.563,56.917 176.145,83.397 164,99.958 " fill="none" id="Type-TraitUsage" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="28" x="171.7418" y="59.9308">user</text><ellipse cx="5.7137" cy="84.5211" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="132" x="11.2137" y="88.9552">outgoingTraitUsages</text><!--link Type to WithTypes--><path d="M230.335,40.267 C240.309,53.665 255.022,73.429 266.812,89.267 " fill="none" id="Type-WithTypes" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="274.772,99.958,274.3975,92.7566,267.606,90.3326,267.9805,97.534,274.772,99.958" style="stroke: #383838; stroke-width: 1.0;"/><ellipse cx="246.7892" cy="55.4967" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="252.2892" y="59.9308">types</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="211.1264" y="88.9059">typeContainer</text><!--link TraitUsage to Trait--><path d="M174.561,132.064 C198.374,148.6775 236.466,175.2538 260.307,191.8869 " fill="none" id="TraitUsage-Trait" style="stroke: #383838; stroke-width: 1.0;"/><ellipse cx="18.1977" cy="147.5244" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="134" x="23.6977" y="151.9585">incomingTraitUsages</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="26" x="222.3919" y="180.8596">trait</text><!--link WithTrait to Trait--><path d="M390.21,132.064 C366.213,148.6775 327.825,175.2538 303.799,191.8869 " fill="none" id="WithTrait-Trait" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="66" x="338.8289" y="152.0492">traitOwner</text><ellipse cx="324.3656" cy="176.4255" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="33" x="329.8656" y="180.8596">traits</text><!--
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {
+	BackgroundColor White
+}
+hide empty members
+class Type << (T,orchid) >> {
+ }
+class TraitUsage << (T,orchid) >> {
+ }
+class WithTypes << (T,orchid) >> {
+ }
+class WithTrait << (T,orchid) >> {
+ }
+class Trait << (T,orchid) >> {
+ }
+Type "user" - - "* outgoingTraitUsages" TraitUsage
+Type "* types" - -o "typeContainer" WithTypes
+TraitUsage "* incomingTraitUsages" - - "trait" Trait
+WithTrait "traitOwner" - - "* traits" Trait
+@enduml
+
+PlantUML version 1.2018.08(Sun Jun 24 14:31:00 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK Server VM
+Java Version: 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+Operating System: Linux
+OS Version: 4.4.0-121-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

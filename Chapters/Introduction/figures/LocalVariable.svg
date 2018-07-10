@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="143px" preserveAspectRatio="none" style="width:244px;height:143px;" version="1.1" viewBox="0 0 244 143" width="244px" zoomAndPan="magnify"><defs/><g><!--class WithLocalVariables--><rect fill="#FFFFFF" height="32" id="WithLocalVariables" style="stroke: #383838; stroke-width: 1.5;" width="149" x="84.5" y="8"/><ellipse cx="99.5" cy="24" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M100.3438,30.75 L97.8906,30.75 L97.8906,20.5 L94.75,20.5 L94.75,18.3594 L103.4844,18.3594 L103.4844,20.5 L100.3438,20.5 L100.3438,30.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="113.5" y="28.1543">WithLocalVariables</text><!--class LocalVariable--><rect fill="#FFFFFF" height="32" id="LocalVariable" style="stroke: #383838; stroke-width: 1.5;" width="115" x="101.5" y="100"/><ellipse cx="116.5" cy="116" fill="#9B9B9B" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M117.3438,122.75 L114.8906,122.75 L114.8906,112.5 L111.75,112.5 L111.75,110.3594 L120.4844,110.3594 L120.4844,112.5 L117.3438,112.5 L117.3438,122.75 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="83" x="130.5" y="120.1543">LocalVariable</text><!--link WithLocalVariables to LocalVariable--><path d="M159,53.3401 C159,68.7851 159,87.2788 159,99.9582 " fill="none" id="WithLocalVariables-LocalVariable" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="159,40.2673,155,46.2673,159,52.2673,163,46.2673,159,40.2673" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="-18.3844" y="59.9312">parentBehaviouralEntity</text><ellipse cx="48.4844" cy="84.5213" fill="#000000" rx="2.5" ry="2.5" style="stroke: #000000; stroke-width: 0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="88" x="53.9844" y="88.9554">localVariables</text><!--
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {
+	BackgroundColor White
+}
+hide empty members
+class WithLocalVariables << (T,orchid) >> {
+ }
+class LocalVariable << (T,orchid) >> {
+ }
+WithLocalVariables "parentBehaviouralEntity" o- - "* localVariables" LocalVariable
+@enduml
+
+PlantUML version 1.2018.08(Sun Jun 24 14:31:00 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK Server VM
+Java Version: 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+Operating System: Linux
+OS Version: 4.4.0-121-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

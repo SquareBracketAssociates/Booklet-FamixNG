@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithImplicitVariables << (T,orchid) >> {
+ }
+class ImplicitVariable << (T,orchid) >> {
+ }
+WithImplicitVariables "parentBehaviouralEntity" o-- "* implicitVariables" ImplicitVariable
+@enduml

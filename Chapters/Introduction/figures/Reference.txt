@@ -1,0 +1,14 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class Referenceable << (T,orchid) >> {
+ }
+class WithReferences << (T,orchid) >> {
+ }
+class Reference << (T,orchid) >> {
+ }
+Referenceable "target" -- "* incomingReferences" Reference
+WithReferences "source" -- "* outgoingReferences" Reference
+@enduml
