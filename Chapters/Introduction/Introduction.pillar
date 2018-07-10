@@ -27,8 +27,6 @@ In the most basic usages, one should be able to create a new meta-model by compo
 !!!Catalog of Concepts
 @ch:ngCatalog
 
-+Access>figures/intro1.png|width=35|label=simpleHierarchy+
-
 +Access>figures/Access.png|width=35|label=Access+
 
 +AnnotationInstance>figures/AnnotationInstance.png|width=35|label=AnnotationInstance+
