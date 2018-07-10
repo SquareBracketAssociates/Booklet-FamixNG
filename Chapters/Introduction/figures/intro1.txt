@@ -1,0 +1,20 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {
+	BackgroundColor White
+}
+
+hide empty members
+
+class NamedEntity
+class ContainerEntity
+class Class
+class Method
+
+NamedEntity <|-down- ContainerEntity
+ContainerEntity <|-down- Class
+NamedEntity <|-down- Method
+
+
+@enduml
