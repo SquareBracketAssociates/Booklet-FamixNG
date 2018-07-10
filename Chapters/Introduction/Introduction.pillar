@@ -123,14 +123,4 @@ In the most basic usages, one should be able to create a new meta-model by compo
 
 +ThrownException>figures/ThrownException.png|width=35|label=ThrownException+
 
-+Type>figures/Type.png|width=35|label=Type+
 
-+TypeAlias>figures/TypeAlias.png|width=35|label=TypeAlias+
-
-+TypedStructure>figures/TypedStructure.png|width=35|label=TypedStructure+
-
-+WithClassScope>figures/WithClassScope.png|width=35|label=WithClassScope+
-
-+WithModifiers>figures/WithModifiers.png|width=35|label=WithModifiers+
-
-+WithSignature>figures/WithSignature.png|width=35|label=WithSignature+
