@@ -27,100 +27,199 @@ In the most basic usages, one should be able to create a new meta-model by compo
 !!!Catalog of Concepts
 @ch:ngCatalog
 
-+Access>figures/Access.png|width=35|label=Access+
+!!!!Access
 
-+AnnotationInstance>figures/AnnotationInstance.png|width=35|label=AnnotationInstance+
++Access>figures/Access.png|width=50|label=Access+
 
-+AnnotationInstanceAttribute>figures/AnnotationInstanceAttribute.png|width=35|label=AnnotationInstanceAttribute+
+!!!!AnnotationInstance
 
-+AnnotationType>figures/AnnotationType.png|width=35|label=AnnotationType+
++AnnotationInstance>figures/AnnotationInstance.png|width=36|label=AnnotationInstance+
 
-+AnnotationTypeAttribute>figures/AnnotationTypeAttribute.png|width=35|label=AnnotationTypeAttribute+
+!!!!AnnotationInstanceAttribute
 
-+Association>figures/Association.png|width=35|label=Association+
++AnnotationInstanceAttribute>figures/AnnotationInstanceAttribute.png|width=43|label=AnnotationInstanceAttribute+
 
-+Attribute>figures/Attribute.png|width=35|label=Attribute+
+!!!!AnnotationType
 
-+CaughtException>figures/CaughtException.png|width=35|label=CaughtException+
++AnnotationType>figures/AnnotationType.png|width=59|label=AnnotationType+
 
-+Class>figures/Class.png|width=35|label=Class+
+!!!!AnnotationTypeAttribute
 
-+ClassHierarchyNavigation>figures/ClassHierarchyNavigation.png|width=35|label=ClassHierarchyNavigation+
++AnnotationTypeAttribute>figures/AnnotationTypeAttribute.png|width=48|label=AnnotationTypeAttribute+
 
-+ClassMetrics>figures/ClassMetrics.png|width=35|label=ClassMetrics+
+!!!!Association
 
-+Comment>figures/Comment.png|width=35|label=Comment+
++Association>figures/Association.png|width=25|label=Association+
 
-+CompilationUnit>figures/CompilationUnit.png|width=35|label=CompilationUnit+
+!!!!Attribute
+
++Attribute>figures/Attribute.png|width=24|label=Attribute+
+
+!!!!CaughtException
+
++CaughtException>figures/CaughtException.png|width=30|label=CaughtException+
+
+!!!!Class
+
++Class>figures/Class.png|width=11|label=Class+
+
+!!!!ClassHierarchyNavigation
+
++ClassHierarchyNavigation>figures/ClassHierarchyNavigation.png|width=28|label=ClassHierarchyNavigation+
+
+!!!!ClassMetrics
+
++ClassMetrics>figures/ClassMetrics.png|width=39|label=ClassMetrics+
+
+!!!!Comment
+
++Comment>figures/Comment.png|width=25|label=Comment+
+
+!!!!CompilationUnit
+
++CompilationUnit>figures/CompilationUnit.png|width=34|label=CompilationUnit+
+
+!!!!DeclaredException
 
 +DeclaredException>figures/DeclaredException.png|width=35|label=DeclaredException+
 
-+DereferencedInvocation>figures/DereferencedInvocation.png|width=35|label=DereferencedInvocation+
+!!!!DereferencedInvocation
 
-+EnumValue>figures/EnumValue.png|width=35|label=EnumValue+
++DereferencedInvocation>figures/DereferencedInvocation.png|width=42|label=DereferencedInvocation+
 
-+Exception>figures/Exception.png|width=35|label=Exception+
+!!!!EnumValue
 
-+File>figures/File.png|width=35|label=File+
++EnumValue>figures/EnumValue.png|width=24|label=EnumValue+
 
-+FileAnchor>figures/FileAnchor.png|width=35|label=FileAnchor+
+!!!!Exception
 
-+FileInclude>figures/FileInclude.png|width=35|label=FileInclude+
++Exception>figures/Exception.png|width=26|label=Exception+
 
-+Folder>figures/Folder.png|width=35|label=Folder+
+!!!!File
 
-+Function>figures/Function.png|width=35|label=Function+
++File>figures/File.png|width=23|label=File+
 
-+GlobalVariable>figures/GlobalVariable.png|width=35|label=GlobalVariable+
+!!!!FileAnchor
 
-+Header>figures/Header.png|width=35|label=Header+
++FileAnchor>figures/FileAnchor.png|width=19|label=FileAnchor+
 
-+ImplicitVariable>figures/ImplicitVariable.png|width=35|label=ImplicitVariable+
+!!!!FileInclude
 
-+Invocable>figures/Invocable.png|width=35|label=Invocable+
++FileInclude>figures/FileInclude.png|width=56|label=FileInclude+
 
-+LCOMMetrics>figures/LCOMMetrics.png|width=35|label=LCOMMetrics+
+!!!!Folder
 
-+LocalVariable>figures/LocalVariable.png|width=35|label=LocalVariable+
++Folder>figures/Folder.png|width=37|label=Folder+
 
-+Method>figures/Method.png|width=35|label=Method+
+!!!!Function
 
-+Module>figures/Module.png|width=35|label=Module+
++Function>figures/Function.png|width=22|label=Function+
 
-+Named>figures/Named.png|width=35|label=Named+
+!!!!GlobalVariable
 
-+Namespace>figures/Namespace.png|width=35|label=Namespace+
++GlobalVariable>figures/GlobalVariable.png|width=27|label=GlobalVariable+
 
-+Package>figures/Package.png|width=35|label=Package+
+!!!!Header
 
-+Parameter>figures/Parameter.png|width=35|label=Parameter+
++Header>figures/Header.png|width=20|label=Header+
 
-+ParameterizedType>figures/ParameterizedType.png|width=35|label=ParameterizedType+
+!!!!ImplicitVariable
 
-+ParameterizedTypeUser>figures/ParameterizedTypeUser.png|width=35|label=ParameterizedTypeUser+
++ImplicitVariable>figures/ImplicitVariable.png|width=34|label=ImplicitVariable+
 
-+PossibleStub>figures/PossibleStub.png|width=35|label=PossibleStub+
+!!!!Invocable
 
-+PreprocessorDefine>figures/PreprocessorDefine.png|width=35|label=PreprocessorDefine+
++Invocable>figures/Invocable.png|width=63|label=Invocable+
 
-+PreprocessorIfdef>figures/PreprocessorIfdef.png|width=35|label=PreprocessorIfdef+
+!!!!LCOMMetrics
 
-+Reference>figures/Reference.png|width=35|label=Reference+
++LCOMMetrics>figures/LCOMMetrics.png|width=17|label=LCOMMetrics+
 
-+ScopingEntity>figures/ScopingEntity.png|width=35|label=ScopingEntity+
+!!!!LocalVariable
 
-+SourceAnchor>figures/SourceAnchor.png|width=35|label=SourceAnchor+
++LocalVariable>figures/LocalVariable.png|width=33|label=LocalVariable+
+
+!!!!Method
+
++Method>figures/Method.png|width=23|label=Method+
+
+!!!!Module
+
++Module>figures/Module.png|width=26|label=Module+
+
+!!!!Named
+
++Named>figures/Named.png|width=16|label=Named+
+
+!!!!Namespace
+
++Namespace>figures/Namespace.png|width=49|label=Namespace+
+
+!!!!Package
+
++Package>figures/Package.png|width=25|label=Package+
+
+!!!!Parameter
+
++Parameter>figures/Parameter.png|width=36|label=Parameter+
+
+!!!!ParameterizedType
+
++ParameterizedType>figures/ParameterizedType.png|width=36|label=ParameterizedType+
+
+!!!!ParameterizedTypeUser
+
++ParameterizedTypeUser>figures/ParameterizedTypeUser.png|width=47|label=ParameterizedTypeUser+
+
+!!!!PossibleStub
+
++PossibleStub>figures/PossibleStub.png|width=17|label=PossibleStub+
+
+!!!!PreprocessorDefine
+
++PreprocessorDefine>figures/PreprocessorDefine.png|width=23|label=PreprocessorDefine+
+
+!!!!PreprocessorIfdef
+
++PreprocessorIfdef>figures/PreprocessorIfdef.png|width=21|label=PreprocessorIfdef+
+
+!!!!Reference
+
++Reference>figures/Reference.png|width=50|label=Reference+
+
+!!!!ScopingEntity
+
++ScopingEntity>figures/ScopingEntity.png|width=31|label=ScopingEntity+
+
+!!!!SourceAnchor
+
++SourceAnchor>figures/SourceAnchor.png|width=46|label=SourceAnchor+
+
+!!!!SourceLanguage
 
 +SourceLanguage>figures/SourceLanguage.png|width=35|label=SourceLanguage+
 
-+Sub>figures/Sub.png|width=35|label=Sub+
+!!!!Sub
 
-+SubInheritance>figures/SubInheritance.png|width=35|label=SubInheritance+
++Sub>figures/Sub.png|width=14|label=Sub+
 
-+SuperInheritance>figures/SuperInheritance.png|width=35|label=SuperInheritance+
+!!!!SubInheritance
 
-+Template>figures/Template.png|width=35|label=Template+
++SubInheritance>figures/SubInheritance.png|width=30|label=SubInheritance+
 
-+ThrownException>figures/ThrownException.png|width=35|label=ThrownException+
+!!!!SuperInheritance
+
++SuperInheritance>figures/SuperInheritance.png|width=29|label=SuperInheritance+
+
+!!!!Template
+
++Template>figures/Template.png|width=45|label=Template+
+
+!!!!ThrownException
+
++ThrownException>figures/ThrownException.png|width=32|label=ThrownException+
+
+
+
 
 
