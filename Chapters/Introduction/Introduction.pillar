@@ -7,7 +7,7 @@ The idea behind FamixNG is to allow the creation of meta-models by composing bas
 
 Take for example a simple model with Classes and Methods. A Class has a ''name'' and ''contains'' methods. A Method has a ''name''. The Figure *@simpleHierarchy* shows a simple hierarchy of these classes.
 
-+A simple meta-model entities hierarchy.>figures/intro1.png|width=35|label=simpleHierarchy+
++A simple meta-model entities hierarchy.>figures/intro1.eps|width=35|label=simpleHierarchy+
 
 However, if we introduce AnonymousClass we have a problem, it is a Class (thus a ContainerEntity, but it is not Named).
 With composition, we could say that there are named entities (that have a name) and there are container entities (that contain other entities). A Class is composed of NamedEntity and ContainerEntity, an AnonymousClass is a composition of ContainerEntity, and a Method is a composition of NamedEntity.
@@ -29,197 +29,219 @@ In the most basic usages, one should be able to create a new meta-model by compo
 
 !!!!Access
 
-+Access>figures/Access.png|width=50|label=Access+
++Access>figures/Access.eps|width=50|label=Access+
 
 !!!!AnnotationInstance
 
-+AnnotationInstance>figures/AnnotationInstance.png|width=36|label=AnnotationInstance+
++AnnotationInstance>figures/AnnotationInstance.eps|width=36|label=AnnotationInstance+
 
 !!!!AnnotationInstanceAttribute
 
-+AnnotationInstanceAttribute>figures/AnnotationInstanceAttribute.png|width=43|label=AnnotationInstanceAttribute+
++AnnotationInstanceAttribute>figures/AnnotationInstanceAttribute.eps|width=43|label=AnnotationInstanceAttribute+
 
 !!!!AnnotationType
 
-+AnnotationType>figures/AnnotationType.png|width=59|label=AnnotationType+
++AnnotationType>figures/AnnotationType.eps|width=59|label=AnnotationType+
 
 !!!!AnnotationTypeAttribute
 
-+AnnotationTypeAttribute>figures/AnnotationTypeAttribute.png|width=48|label=AnnotationTypeAttribute+
++AnnotationTypeAttribute>figures/AnnotationTypeAttribute.eps|width=48|label=AnnotationTypeAttribute+
 
 !!!!Association
 
-+Association>figures/Association.png|width=25|label=Association+
++Association>figures/Association.eps|width=25|label=Association+
 
 !!!!Attribute
 
-+Attribute>figures/Attribute.png|width=24|label=Attribute+
++Attribute>figures/Attribute.eps|width=24|label=Attribute+
 
 !!!!CaughtException
 
-+CaughtException>figures/CaughtException.png|width=30|label=CaughtException+
++CaughtException>figures/CaughtException.eps|width=30|label=CaughtException+
 
 !!!!Class
 
-+Class>figures/Class.png|width=11|label=Class+
++Class>figures/Class.eps|width=11|label=Class+
 
 !!!!ClassHierarchyNavigation
 
-+ClassHierarchyNavigation>figures/ClassHierarchyNavigation.png|width=28|label=ClassHierarchyNavigation+
++ClassHierarchyNavigation>figures/ClassHierarchyNavigation.eps|width=28|label=ClassHierarchyNavigation+
 
 !!!!ClassMetrics
 
-+ClassMetrics>figures/ClassMetrics.png|width=39|label=ClassMetrics+
++ClassMetrics>figures/ClassMetrics.eps|width=39|label=ClassMetrics+
 
 !!!!Comment
 
-+Comment>figures/Comment.png|width=25|label=Comment+
++Comment>figures/Comment.eps|width=25|label=Comment+
 
 !!!!CompilationUnit
 
-+CompilationUnit>figures/CompilationUnit.png|width=34|label=CompilationUnit+
++CompilationUnit>figures/CompilationUnit.eps|width=34|label=CompilationUnit+
 
 !!!!DeclaredException
 
-+DeclaredException>figures/DeclaredException.png|width=35|label=DeclaredException+
++DeclaredException>figures/DeclaredException.eps|width=35|label=DeclaredException+
 
 !!!!DereferencedInvocation
 
-+DereferencedInvocation>figures/DereferencedInvocation.png|width=42|label=DereferencedInvocation+
++DereferencedInvocation>figures/DereferencedInvocation.eps|width=42|label=DereferencedInvocation+
 
 !!!!EnumValue
 
-+EnumValue>figures/EnumValue.png|width=24|label=EnumValue+
++EnumValue>figures/EnumValue.eps|width=24|label=EnumValue+
 
 !!!!Exception
 
-+Exception>figures/Exception.png|width=26|label=Exception+
++Exception>figures/Exception.eps|width=26|label=Exception+
 
 !!!!File
 
-+File>figures/File.png|width=23|label=File+
++File>figures/File.eps|width=23|label=File+
 
 !!!!FileAnchor
 
-+FileAnchor>figures/FileAnchor.png|width=19|label=FileAnchor+
++FileAnchor>figures/FileAnchor.eps|width=19|label=FileAnchor+
 
 !!!!FileInclude
 
-+FileInclude>figures/FileInclude.png|width=56|label=FileInclude+
++FileInclude>figures/FileInclude.eps|width=56|label=FileInclude+
 
 !!!!Folder
 
-+Folder>figures/Folder.png|width=37|label=Folder+
++Folder>figures/Folder.eps|width=37|label=Folder+
 
 !!!!Function
 
-+Function>figures/Function.png|width=22|label=Function+
++Function>figures/Function.eps|width=22|label=Function+
 
 !!!!GlobalVariable
 
-+GlobalVariable>figures/GlobalVariable.png|width=27|label=GlobalVariable+
++GlobalVariable>figures/GlobalVariable.eps|width=27|label=GlobalVariable+
 
 !!!!Header
 
-+Header>figures/Header.png|width=20|label=Header+
++Header>figures/Header.eps|width=20|label=Header+
 
 !!!!ImplicitVariable
 
-+ImplicitVariable>figures/ImplicitVariable.png|width=34|label=ImplicitVariable+
++ImplicitVariable>figures/ImplicitVariable.eps|width=34|label=ImplicitVariable+
 
 !!!!Invocable
 
-+Invocable>figures/Invocable.png|width=63|label=Invocable+
++Invocable>figures/Invocable.eps|width=63|label=Invocable+
 
 !!!!LCOMMetrics
 
-+LCOMMetrics>figures/LCOMMetrics.png|width=17|label=LCOMMetrics+
++LCOMMetrics>figures/LCOMMetrics.eps|width=17|label=LCOMMetrics+
 
 !!!!LocalVariable
 
-+LocalVariable>figures/LocalVariable.png|width=33|label=LocalVariable+
++LocalVariable>figures/LocalVariable.eps|width=33|label=LocalVariable+
 
 !!!!Method
 
-+Method>figures/Method.png|width=23|label=Method+
++Method>figures/Method.eps|width=23|label=Method+
 
 !!!!Module
 
-+Module>figures/Module.png|width=26|label=Module+
++Module>figures/Module.eps|width=26|label=Module+
 
 !!!!Named
 
-+Named>figures/Named.png|width=16|label=Named+
++Named>figures/Named.eps|width=16|label=Named+
 
 !!!!Namespace
 
-+Namespace>figures/Namespace.png|width=49|label=Namespace+
++Namespace>figures/Namespace.eps|width=49|label=Namespace+
 
 !!!!Package
 
-+Package>figures/Package.png|width=25|label=Package+
++Package>figures/Package.eps|width=25|label=Package+
 
 !!!!Parameter
 
-+Parameter>figures/Parameter.png|width=36|label=Parameter+
++Parameter>figures/Parameter.eps|width=36|label=Parameter+
 
 !!!!ParameterizedType
 
-+ParameterizedType>figures/ParameterizedType.png|width=36|label=ParameterizedType+
++ParameterizedType>figures/ParameterizedType.eps|width=36|label=ParameterizedType+
 
 !!!!ParameterizedTypeUser
 
-+ParameterizedTypeUser>figures/ParameterizedTypeUser.png|width=47|label=ParameterizedTypeUser+
++ParameterizedTypeUser>figures/ParameterizedTypeUser.eps|width=47|label=ParameterizedTypeUser+
 
 !!!!PossibleStub
 
-+PossibleStub>figures/PossibleStub.png|width=17|label=PossibleStub+
++PossibleStub>figures/PossibleStub.eps|width=17|label=PossibleStub+
 
 !!!!PreprocessorDefine
 
-+PreprocessorDefine>figures/PreprocessorDefine.png|width=23|label=PreprocessorDefine+
++PreprocessorDefine>figures/PreprocessorDefine.eps|width=23|label=PreprocessorDefine+
 
 !!!!PreprocessorIfdef
 
-+PreprocessorIfdef>figures/PreprocessorIfdef.png|width=21|label=PreprocessorIfdef+
++PreprocessorIfdef>figures/PreprocessorIfdef.eps|width=21|label=PreprocessorIfdef+
 
 !!!!Reference
 
-+Reference>figures/Reference.png|width=50|label=Reference+
++Reference>figures/Reference.eps|width=50|label=Reference+
 
 !!!!ScopingEntity
 
-+ScopingEntity>figures/ScopingEntity.png|width=31|label=ScopingEntity+
++ScopingEntity>figures/ScopingEntity.eps|width=31|label=ScopingEntity+
 
 !!!!SourceAnchor
 
-+SourceAnchor>figures/SourceAnchor.png|width=46|label=SourceAnchor+
++SourceAnchor>figures/SourceAnchor.eps|width=46|label=SourceAnchor+
 
 !!!!SourceLanguage
 
-+SourceLanguage>figures/SourceLanguage.png|width=35|label=SourceLanguage+
++SourceLanguage>figures/SourceLanguage.eps|width=35|label=SourceLanguage+
 
 !!!!Sub
 
-+Sub>figures/Sub.png|width=14|label=Sub+
++Sub>figures/Sub.eps|width=14|label=Sub+
 
 !!!!SubInheritance
 
-+SubInheritance>figures/SubInheritance.png|width=30|label=SubInheritance+
++SubInheritance>figures/SubInheritance.eps|width=30|label=SubInheritance+
 
 !!!!SuperInheritance
 
-+SuperInheritance>figures/SuperInheritance.png|width=29|label=SuperInheritance+
++SuperInheritance>figures/SuperInheritance.eps|width=29|label=SuperInheritance+
 
 !!!!Template
 
-+Template>figures/Template.png|width=45|label=Template+
++Template>figures/Template.eps|width=45|label=Template+
 
 !!!!ThrownException
 
-+ThrownException>figures/ThrownException.png|width=32|label=ThrownException+
++ThrownException>figures/ThrownException.eps|width=32|label=ThrownException+
 
+!!!!Type
 
++Type>figures/Type.eps|width=63|label=Type+
+
+!!!!TypeAlias
+
++TypeAlias>figures/TypeAlias.eps|width=24|label=TypeAlias+
+
+!!!!TypedStructure
+
++TypedStructure>figures/TypedStructure.eps|width=39|label=TypedStructure+
+
+!!!!WithClassScope
+
++WithClassScope>figures/WithClassScope.eps|width=20|label=WithClassScope+
+
+!!!!WithModifiers
+
++WithModifiers>figures/WithModifiers.eps|width=17|label=WithModifiers+
+
+!!!!WithSignature
+
++WithSignature>figures/WithSignature.eps|width=18|label=WithSignature+
 
 
 
