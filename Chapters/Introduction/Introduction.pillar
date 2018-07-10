@@ -7,7 +7,7 @@ The idea behind FamixNG is to allow the creation of meta-models by composing bas
 
 Take for example a simple model with Classes and Methods. A Class has a ''name'' and ''contains'' methods. A Method has a ''name''. The Figure *@simpleHierarchy* shows a simple hierarchy of these classes.
 
-+A simple meta-model entities hierarchy.>figures/intro1.png|label=simpleHierarchy++figures/intro1.png||width=35|label=simpleHierarchy+
++A simple meta-model entities hierarchy.>figures/intro1.png|width=35|label=simpleHierarchy+
 
 However, if we introduce AnonymousClass we have a problem, it is a Class (thus a ContainerEntity, but it is not Named).
 With composition, we could say that there are named entities (that have a name) and there are container entities (that contain other entities). A Class is composed of NamedEntity and ContainerEntity, an AnonymousClass is a composition of ContainerEntity, and a Method is a composition of NamedEntity.
