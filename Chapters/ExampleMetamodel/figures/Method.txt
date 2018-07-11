@@ -1,0 +1,19 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {	BackgroundColor White}
+hide empty members
+class WithMethods << (T,orchid) >> {
+	+numberOfMethods()
+ }
+class Method << (T,orchid) >> {
+	+isSetter()
+	+hasClassScope
+	+isConstant()
+	+category
+	+kind
+	+isConstructor()
+	+timeStamp
+ }
+WithMethods "parentType" o-- "* methods" Method
+@enduml

@@ -1,7 +1,7 @@
 !!Custom meta-model tutorial
 @ch:exampleMetamodel
 
-In this tutorial, we will create a simple meta-model. During that, we  will describe how to create own generator, use predefined traits, extend the meta-model with custom behavior and create models described by this meta-model. 
+In this tutorial, we will create a simple meta-model. During that, we will describe how to create own generator, use predefined traits, extend the meta-model with custom behavior and create models described by this meta-model. 
 
 !!!Preparation
 
@@ -15,6 +15,8 @@ FamixMetamodelGenerator subclass: #DemoStMetamodelGenerator
     classVariableNames: ''
     package: 'DemoStMetamodelGenerator'
 ]]]
+
+@@note In this tutorial, we do not use any prepared language generator to keep things more clear and straightforward. Usually, the other generator class like ==FmxNGBasicInfrastructureGenerator== would be chosen as the superclass. 
 
 Then we need to specify what is the package where the meta-model will be generated. For that purpose we will create a class-side method named ==packageName==. The package name must be always specified.
 
@@ -34,7 +36,7 @@ DemoStMetamodelGenerator class >> prefix
 
 !!!Metamodel entities creation
 
-We need to define the entities of our metamodel. The instance side method ==defineClasses== servers for this purpose. We will create a new instance variable for each of them and create a meta-model class for it with a suitable name starting with an uppercase character.
+We need to define the entities of our meta-model, like class, package or method. Firstly we will create one instance variable of in our generator for every one of them and then in the instance side method ==defineClasses== we will define them as meta-model classes with a suitable name starting with an uppercase character.
 
 [[[­lan­gua­ge=­Sma­lltalk
 defineClasses
@@ -52,13 +54,15 @@ defineClasses
     parameter := builder newClassNamed: #Parameter.
 ]]]
 
+@@note We have an option to define them in this method and then let Pharo create instance variables for us automatically during the method saving.
+
 Then we can try to create the first testing generation of our meta-model:
 
 [[[­lan­gua­ge=­Sma­lltalk
 DemoStMetamodelGenerator new generate.
 ]]]
 
-We can see that the package ==DemoSmalltalkMetamodel-Generated== was created. For each entity, a class was created. 
+We see that the package ==DemoSmalltalkMetamodel-Generated== was created. For each entity, a class was created in the class category named ==Entities== 
 
 In the next step, we will specify the classes hierarchy in a method named ==defineHierarchy==:
 
@@ -68,8 +72,7 @@ defineHierarchy
     entity <|-- package.
     entity <|-- class.
     entity <|-- method.   
-    entity <|-- comment.
-
+ 
     variable <|-- attribute.        
     variable <|-- implicitVariable.        
     variable <|-- globalVariable.        
@@ -91,6 +94,8 @@ defineProperties
     (comment property: #content type: #String)
         comment: 'Content of the comment as a String'.
 ]]]
+
+@@note The message ==comment:== is used here to set the comment of the property. It is not related to the entity ==comment== of our meta-model.
       
 In the instance side method named ==defineProperties== of the generator, we defined a string property on the comment entity and added a comment.
 
@@ -155,7 +160,13 @@ Then we can extend our meta-model classes definition (==defineHierarchy==).
 
 This way we told to the generated class DemoSTEnitity that it should use a standard FamixNG trait named FmxNGTNamed. After re-generating of our meta-model, our tests should be green.
 
-Now let's create a relationship between method and entities that can hold them. In Smalltalk methods can belong to classes and to packages (extension methods). We will add a standard trait ==TMethod== to our ''method'' entity and a trait named ==TWithMethods== to the entity ''class''. Then we will say that methods and classes are ''packageable'' and the package uses a trait named ==TPackage==.
+Now let's create a relationship between method and entities that can hold them. In Smalltalk methods can belong to classes and to packages (extension methods).  We will open the tool named "Famix trait groups" from the Moose menu where we will find suitable trais in categories "Method" and "Package."
+
++Method>figures/Method.eps|width=23|label=Method+
+
++Package>figures/Package.eps|width=25|label=Package+
+
+We will add a standard trait ==TMethod== to our ''method'' entity and a trait named ==TWithMethods== to the entity ''class''. Then we will say that methods and classes are ''packageable'' and the package uses a trait named ==TPackage==.
 
 [[[­lan­gua­ge=­Sma­lltalk
     method --|> #TMethod.
@@ -166,6 +177,8 @@ Now let's create a relationship between method and entities that can hold them. 
 ]]]
 
 You may ask why the ''package'' does not use the ==TWithMethods== trait too. The pair of traits ==TWithMethods== and ==TMethod== defines relationship ''methods'' - ''parentType''. Of course, the package is not a parent type for the method and because the method can belong to a class and package simultaneously, it would cause a collision.
+
+@@note Our meta-model has no entity that can contain packages. We will not apply the trait ==TWithPackages== to any class. The property ==packageOwner== of the DemoSTPackage will always return nil. 
 
 With such meta-model, we can start to build more complex models.
 
