@@ -1,0 +1,18 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {
+	BackgroundColor White
+}
+
+hide empty members
+
+class A
+class B
+class C
+
+A <|-down- B
+C <|-down- B
+
+
+@enduml

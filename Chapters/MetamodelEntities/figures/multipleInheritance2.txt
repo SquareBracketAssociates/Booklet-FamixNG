@@ -1,0 +1,20 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+skinparam class {
+	BackgroundColor White
+}
+
+hide empty members
+
+class A
+class B
+class TC << (T,orchid) >>
+class C
+
+A <|-down- B
+TC <|-down- B
+TC <|-down- C
+
+
+@enduml
