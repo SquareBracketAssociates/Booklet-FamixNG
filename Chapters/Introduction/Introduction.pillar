@@ -31,431 +31,431 @@ In the most basic usages, one should be able to create a new meta-model by compo
 
 +Access>figures/Access.eps|width=50|label=fig:Access+
 
-*@fig:Access*
+TODO: This trait group requires description, see *@fig:Access*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!AnnotationInstance
 
 +AnnotationInstance>figures/AnnotationInstance.eps|width=36|label=fig:AnnotationInstance+
 
-*@fig:AnnotationInstance*
+TODO: This trait group requires description, see *@fig:AnnotationInstance*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!AnnotationInstanceAttribute
 
 +AnnotationInstanceAttribute>figures/AnnotationInstanceAttribute.eps|width=43|label=fig:AnnotationInstanceAttribute+
 
-*@fig:AnnotationInstanceAttribute*
+TODO: This trait group requires description, see *@fig:AnnotationInstanceAttribute*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!AnnotationType
 
 +AnnotationType>figures/AnnotationType.eps|width=59|label=fig:AnnotationType+
 
-*@fig:AnnotationType*
+TODO: This trait group requires description, see *@fig:AnnotationType*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!AnnotationTypeAttribute
 
 +AnnotationTypeAttribute>figures/AnnotationTypeAttribute.eps|width=48|label=fig:AnnotationTypeAttribute+
 
-*@fig:AnnotationTypeAttribute*
+TODO: This trait group requires description, see *@fig:AnnotationTypeAttribute*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Association
 
 +Association>figures/Association.eps|width=25|label=fig:Association+
 
-*@fig:Association*
+TODO: This trait group requires description, see *@fig:Association*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Attribute
 
 +Attribute>figures/Attribute.eps|width=24|label=fig:Attribute+
 
-*@fig:Attribute*
+TODO: This trait group requires description, see *@fig:Attribute*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!CaughtException
 
 +CaughtException>figures/CaughtException.eps|width=30|label=fig:CaughtException+
 
-*@fig:CaughtException*
+TODO: This trait group requires description, see *@fig:CaughtException*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Class
 
 +Class>figures/Class.eps|width=11|label=fig:Class+
 
-*@fig:Class*
+TODO: This trait group requires description, see *@fig:Class*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!ClassHierarchyNavigation
 
 +ClassHierarchyNavigation>figures/ClassHierarchyNavigation.eps|width=28|label=fig:ClassHierarchyNavigation+
 
-*@fig:ClassHierarchyNavigation*
+TODO: This trait group requires description, see *@fig:ClassHierarchyNavigation*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!ClassMetrics
 
 +ClassMetrics>figures/ClassMetrics.eps|width=39|label=fig:ClassMetrics+
 
-*@fig:ClassMetrics*
+TODO: This trait group requires description, see *@fig:ClassMetrics*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Comment
 
 +Comment>figures/Comment.eps|width=25|label=fig:Comment+
 
-*@fig:Comment*
+TODO: This trait group requires description, see *@fig:Comment*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!CompilationUnit
 
 +CompilationUnit>figures/CompilationUnit.eps|width=34|label=fig:CompilationUnit+
 
-*@fig:CompilationUnit*
+TODO: This trait group requires description, see *@fig:CompilationUnit*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!DeclaredException
 
 +DeclaredException>figures/DeclaredException.eps|width=35|label=fig:DeclaredException+
 
-*@fig:DeclaredException*
+TODO: This trait group requires description, see *@fig:DeclaredException*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!DereferencedInvocation
 
 +DereferencedInvocation>figures/DereferencedInvocation.eps|width=42|label=fig:DereferencedInvocation+
 
-*@fig:DereferencedInvocation*
+TODO: This trait group requires description, see *@fig:DereferencedInvocation*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!EnumValue
 
 +EnumValue>figures/EnumValue.eps|width=24|label=fig:EnumValue+
 
-*@fig:EnumValue*
+TODO: This trait group requires description, see *@fig:EnumValue*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Exception
 
 +Exception>figures/Exception.eps|width=26|label=fig:Exception+
 
-*@fig:Exception*
+TODO: This trait group requires description, see *@fig:Exception*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!File
 
 +File>figures/File.eps|width=23|label=fig:File+
 
-*@fig:File*
+TODO: This trait group requires description, see *@fig:File*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!FileAnchor
 
 +FileAnchor>figures/FileAnchor.eps|width=19|label=fig:FileAnchor+
 
-*@fig:FileAnchor*
+TODO: This trait group requires description, see *@fig:FileAnchor*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!FileInclude
 
 +FileInclude>figures/FileInclude.eps|width=56|label=fig:FileInclude+
 
-*@fig:FileInclude*
+TODO: This trait group requires description, see *@fig:FileInclude*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Folder
 
 +Folder>figures/Folder.eps|width=37|label=fig:Folder+
 
-*@fig:Folder*
+TODO: This trait group requires description, see *@fig:Folder*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Function
 
 +Function>figures/Function.eps|width=22|label=fig:Function+
 
-*@fig:Function*
+TODO: This trait group requires description, see *@fig:Function*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!GlobalVariable
 
 +GlobalVariable>figures/GlobalVariable.eps|width=27|label=fig:GlobalVariable+
 
-*@fig:GlobalVariable*
+TODO: This trait group requires description, see *@fig:GlobalVariable*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Header
 
 +Header>figures/Header.eps|width=20|label=fig:Header+
 
-*@fig:Header*
+TODO: This trait group requires description, see *@fig:Header*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!ImplicitVariable
 
 +ImplicitVariable>figures/ImplicitVariable.eps|width=34|label=fig:ImplicitVariable+
 
-*@fig:ImplicitVariable*
+TODO: This trait group requires description, see *@fig:ImplicitVariable*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Invocable
 
 +Invocable>figures/Invocable.eps|width=63|label=fig:Invocable+
 
-*@fig:Invocable*
+TODO: This trait group requires description, see *@fig:Invocable*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!LCOMMetrics
 
 +LCOMMetrics>figures/LCOMMetrics.eps|width=17|label=fig:LCOMMetrics+
 
-*@fig:LCOMMetrics*
+TODO: This trait group requires description, see *@fig:LCOMMetrics*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!LocalVariable
 
 +LocalVariable>figures/LocalVariable.eps|width=33|label=fig:LocalVariable+
 
-*@fig:LocalVariable*
+TODO: This trait group requires description, see *@fig:LocalVariable*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Method
 
 +Method>figures/Method.eps|width=23|label=fig:Method+
 
-*@fig:Method*
+TODO: This trait group requires description, see *@fig:Method*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Module
 
 +Module>figures/Module.eps|width=26|label=fig:Module+
 
-*@fig:Module*
+TODO: This trait group requires description, see *@fig:Module*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Named
 
 +Named>figures/Named.eps|width=16|label=fig:Named+
 
-*@fig:Named*
+TODO: This trait group requires description, see *@fig:Named*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Namespace
 
 +Namespace>figures/Namespace.eps|width=49|label=fig:Namespace+
 
-*@fig:Namespace*
+TODO: This trait group requires description, see *@fig:Namespace*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Package
 
 +Package>figures/Package.eps|width=25|label=fig:Package+
 
-*@fig:Package*
+TODO: This trait group requires description, see *@fig:Package*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Parameter
 
 +Parameter>figures/Parameter.eps|width=36|label=fig:Parameter+
 
-*@fig:Parameter*
+TODO: This trait group requires description, see *@fig:Parameter*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!ParameterizedType
 
 +ParameterizedType>figures/ParameterizedType.eps|width=36|label=fig:ParameterizedType+
 
-*@fig:ParameterizedType*
+TODO: This trait group requires description, see *@fig:ParameterizedType*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!ParameterizedTypeUser
 
 +ParameterizedTypeUser>figures/ParameterizedTypeUser.eps|width=47|label=fig:ParameterizedTypeUser+
 
-*@fig:ParameterizedTypeUser*
+TODO: This trait group requires description, see *@fig:ParameterizedTypeUser*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!PossibleStub
 
 +PossibleStub>figures/PossibleStub.eps|width=17|label=fig:PossibleStub+
 
-*@fig:PossibleStub*
+TODO: This trait group requires description, see *@fig:PossibleStub*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!PreprocessorDefine
 
 +PreprocessorDefine>figures/PreprocessorDefine.eps|width=23|label=fig:PreprocessorDefine+
 
-*@fig:PreprocessorDefine*
+TODO: This trait group requires description, see *@fig:PreprocessorDefine*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!PreprocessorIfdef
 
 +PreprocessorIfdef>figures/PreprocessorIfdef.eps|width=21|label=fig:PreprocessorIfdef+
 
-*@fig:PreprocessorIfdef*
+TODO: This trait group requires description, see *@fig:PreprocessorIfdef*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Reference
 
 +Reference>figures/Reference.eps|width=50|label=fig:Reference+
 
-*@fig:Reference*
+TODO: This trait group requires description, see *@fig:Reference*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!ScopingEntity
 
 +ScopingEntity>figures/ScopingEntity.eps|width=31|label=fig:ScopingEntity+
 
-*@fig:ScopingEntity*
+TODO: This trait group requires description, see *@fig:ScopingEntity*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!SourceAnchor
 
 +SourceAnchor>figures/SourceAnchor.eps|width=46|label=fig:SourceAnchor+
 
-*@fig:SourceAnchor*
+TODO: This trait group requires description, see *@fig:SourceAnchor*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!SourceLanguage
 
 +SourceLanguage>figures/SourceLanguage.eps|width=35|label=fig:SourceLanguage+
 
-*@fig:SourceLanguage*
+TODO: This trait group requires description, see *@fig:SourceLanguage*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Sub
 
 +Sub>figures/Sub.eps|width=14|label=fig:Sub+
 
-*@fig:Sub*
+TODO: This trait group requires description, see *@fig:Sub*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!SubInheritance
 
 +SubInheritance>figures/SubInheritance.eps|width=30|label=fig:SubInheritance+
 
-*@fig:SubInheritance*
+TODO: This trait group requires description, see *@fig:SubInheritance*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!SuperInheritance
 
 +SuperInheritance>figures/SuperInheritance.eps|width=29|label=fig:SuperInheritance+
 
-*@fig:SuperInheritance*
+TODO: This trait group requires description, see *@fig:SuperInheritance*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Template
 
 +Template>figures/Template.eps|width=45|label=fig:Template+
 
-*@fig:Template*
+TODO: This trait group requires description, see *@fig:Template*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!ThrownException
 
 +ThrownException>figures/ThrownException.eps|width=32|label=fig:ThrownException+
 
-*@fig:ThrownException*
+TODO: This trait group requires description, see *@fig:ThrownException*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!Type
 
 +Type>figures/Type.eps|width=63|label=fig:Type+
 
-*@fig:Type*
+TODO: This trait group requires description, see *@fig:Type*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!TypeAlias
 
 +TypeAlias>figures/TypeAlias.eps|width=24|label=fig:TypeAlias+
 
-*@fig:TypeAlias*
+TODO: This trait group requires description, see *@fig:TypeAlias*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!TypedStructure
 
 +TypedStructure>figures/TypedStructure.eps|width=39|label=fig:TypedStructure+
 
-*@fig:TypedStructure*
+TODO: This trait group requires description, see *@fig:TypedStructure*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!WithClassScope
 
 +WithClassScope>figures/WithClassScope.eps|width=20|label=fig:WithClassScope+
 
-*@fig:WithClassScope*
+TODO: This trait group requires description, see *@fig:WithClassScope*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!WithModifiers
 
 +WithModifiers>figures/WithModifiers.eps|width=17|label=fig:WithModifiers+
 
-*@fig:WithModifiers*
+TODO: This trait group requires description, see *@fig:WithModifiers*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 
 !!!!WithSignature
 
 +WithSignature>figures/WithSignature.eps|width=18|label=fig:WithSignature+
 
-*@fig:WithSignature*
+TODO: This trait group requires description, see *@fig:WithSignature*
 
 
 
