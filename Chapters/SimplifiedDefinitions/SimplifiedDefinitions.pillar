@@ -1,31 +1,30 @@
 !!Simplified definitions
 
-The meta-model builder provides ways to make the definition of some common constructs simpler. This chapter will describe them.
+The meta-model builder provides ways to make the definition of some common constructs simpler. This chapter describes them.
 
 !!!Simplified traits generation
 @ch:simplifiedTraitsGeneration
 
-Because traits should be the main providers of the behavior and classes play only a role of entities composing traits, the classes offer a simple message ==as:== that can define a trait related to it.
+Because traits should be the primary providers of the behavior and classes often play only a role of entities composing traits, the classes offer a simple message ==as:== that can define traits related to them.
 
 [[[­lan­gua­ge=­Sma­lltalk
 behavior := builder newClassNamed: #Behavior.
-behavior as: #TBehavior.	
+behavior as: #TBehavior.    
 ]]]
 
-This code creates a new trait and then sets the class as an user of this new trait. So the code above is equivalent to: 
+This code creates a new trait and then sets the class as a user of this new trait. So the code above is equivalent to: 
 
 [[[­lan­gua­ge=­Sma­lltalk
 behavior := builder newClassNamed: #Behavior.
-tBehavior := builder newTraitNamed: #TBehavior.
-tBehavior <|-- behavior
+(builder newTraitNamed: #TBehavior) <|-- behavior
 ]]]
 
-In most cases a related construct (==as:property:==) is used for the description of relations between properties without the need to separately create traits:
+In most cases, a related construct (==as:property:==) is used for the description of relations between properties without the need to separately create traits:
 
 [[[­lan­gua­ge=­Sma­lltalk
-method := builder newClassNamed: #Method.	
-comment := builder newClassNamed: #Comment.	
-	
+method := builder newClassNamed: #Method.    
+comment := builder newClassNamed: #Comment.    
+    
 (method as: #TMethod property: #comments) 
     -*
 (comment as: #TComment property: #owningMethod).
@@ -38,38 +37,46 @@ behavior := builder newClassNamed: #Behavior.
 tBehavior := (behavior as: #TBehavior) trait.
 ]]]
 
-Of course such traits can then be used by other classes too (with ==\<\|\-\-==).
+Of course, such traits can then be used by other classes too (with ==\<\|\-\-==).
 
 !!!Automatic properties generation
 
-Relations can be defined directly on classes. In that case the corresponding traits are generated and named automatically. 
+Relations can be defined directly between classes. In that case, the corresponding properties are named automatically. 
 
 [[[­lan­gua­ge=­Sma­lltalk
-access := builder newClassNamed: #Access.	
-variable := builder newClassNamed: #Variable.	
+access := builder newClassNamed: #Access.    
+variable := builder newClassNamed: #Variable.    
 variable -* access.
 ]]]
 
-In this case the traits named ==TAccess== and ==TWithAccesses== are automaticaly generated. The properties in them are defined and named automatically too. The example above is equivalent to the following code:
+The example above is equivalent to the following code:
 
 [[[­lan­gua­ge=­Sma­lltalk
-access := builder newClassNamed: #Access.	
-variable := builder newClassNamed: #Variable.	
-(variable as: #TWithAcceses property: #accesses) 
-	-*
-(access as: #TAccess property: #accessOwner).
+access := builder newClassNamed: #Access.    
+variable := builder newClassNamed: #Variable.    
+(variable property: #accesses) 
+    -*
+(accessproperty: #variable).
+]]]
+
+You can define relationships between any combination of classes, traits and class aliases (created using #as:) message.
+
+[[[­lan­gua­ge=­Sma­lltalk
+access := builder newClassNamed: #Access.    
+variable := builder newClassNamed: #Variable.
+(variable as: #TVariable) -* access.
 ]]]
 
 !!!Associations generation
 @ch:AssociationsGeneration
 
-Often you have in the meta-model a relation of two entities where you want to be able to describe more detailed properties of such relations. For example a variable can be used in a method and you want to be able to model concrete accesses within the method. You want to be able to know where in the code the access takes place, if it is reading or storing into the variable, etc. The meta-model builder provides the method ==link:throughAssociation:link:with:== that simplifies the definition of such relations that are named ''associations''. The message allows you to control the names of the properties. It will be clearer with an example:
+Often you have in a meta-model a relation of two entities where you want to be able to describe more detailed properties of such relations. For example, a variable can be used in a method and you want to be able to model concrete accesses within the method. You want to know where in the code the access takes place if it is reading or storing in the variable, etc. The meta-model builder provides the method ==link:throughAssociation:link:with:== that simplifies the definition of such relations that are named ''associations''. The message allows you to control the names of the properties. It will be clearer with an example:
 
 [[[­lan­gua­ge=­Sma­lltalk
-access := builder newClassNamed: #Access.	
-variable := builder newClassNamed: #Variable.	
-method := builder newClassNamed: #Method.	
-		
+access := builder newClassNamed: #Access.    
+variable := builder newClassNamed: #Variable.    
+method := builder newClassNamed: #Method.    
+        
 (method as: #TWithAccesses)
     link: #accesses -> #accessor
     throughAssociation: (access as: #TAccess) 
