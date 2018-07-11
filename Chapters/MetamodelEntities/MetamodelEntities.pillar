@@ -63,7 +63,7 @@ This is the way how multiple inheritance can be expressed in the meta-model. Let
 
 +Multiple inheritance with classes>figures/multipleInheritance1.eps|width=18|label=multipleInheritance1+
 
-+Multiple inheritance with classes and traits>figures/multipleInheritance2.eps.eps|width=19|label=multipleInheritance2+
++Multiple inheritance with classes and traits>figures/multipleInheritance2.eps|width=19|label=multipleInheritance2+
 
 [[[­lan­gua­ge=­Sma­lltalk
 a := builder newClassNamed: #A.    
