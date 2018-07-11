@@ -31,217 +31,325 @@ In the most basic usages, one should be able to create a new meta-model by compo
 
 +Access>figures/Access.eps|width=50|label=Access+
 
+*@fig:Access*
+
 !!!!AnnotationInstance
 
 +AnnotationInstance>figures/AnnotationInstance.eps|width=36|label=AnnotationInstance+
+
+*@fig:AnnotationInstance*
 
 !!!!AnnotationInstanceAttribute
 
 +AnnotationInstanceAttribute>figures/AnnotationInstanceAttribute.eps|width=43|label=AnnotationInstanceAttribute+
 
+*@fig:AnnotationInstanceAttribute*
+
 !!!!AnnotationType
 
 +AnnotationType>figures/AnnotationType.eps|width=59|label=AnnotationType+
+
+*@fig:AnnotationType*
 
 !!!!AnnotationTypeAttribute
 
 +AnnotationTypeAttribute>figures/AnnotationTypeAttribute.eps|width=48|label=AnnotationTypeAttribute+
 
+*@fig:AnnotationTypeAttribute*
+
 !!!!Association
 
 +Association>figures/Association.eps|width=25|label=Association+
+
+*@fig:Association*
 
 !!!!Attribute
 
 +Attribute>figures/Attribute.eps|width=24|label=Attribute+
 
+*@fig:Attribute*
+
 !!!!CaughtException
 
 +CaughtException>figures/CaughtException.eps|width=30|label=CaughtException+
+
+*@fig:CaughtException*
 
 !!!!Class
 
 +Class>figures/Class.eps|width=11|label=Class+
 
+*@fig:Class*
+
 !!!!ClassHierarchyNavigation
 
 +ClassHierarchyNavigation>figures/ClassHierarchyNavigation.eps|width=28|label=ClassHierarchyNavigation+
+
+*@fig:ClassHierarchyNavigation*
 
 !!!!ClassMetrics
 
 +ClassMetrics>figures/ClassMetrics.eps|width=39|label=ClassMetrics+
 
+*@fig:ClassMetrics*
+
 !!!!Comment
 
 +Comment>figures/Comment.eps|width=25|label=Comment+
+
+*@fig:Comment*
 
 !!!!CompilationUnit
 
 +CompilationUnit>figures/CompilationUnit.eps|width=34|label=CompilationUnit+
 
+*@fig:CompilationUnit*
+
 !!!!DeclaredException
 
 +DeclaredException>figures/DeclaredException.eps|width=35|label=DeclaredException+
+
+*@fig:DeclaredException*
 
 !!!!DereferencedInvocation
 
 +DereferencedInvocation>figures/DereferencedInvocation.eps|width=42|label=DereferencedInvocation+
 
+*@fig:DereferencedInvocation*
+
 !!!!EnumValue
 
 +EnumValue>figures/EnumValue.eps|width=24|label=EnumValue+
+
+*@fig:EnumValue*
 
 !!!!Exception
 
 +Exception>figures/Exception.eps|width=26|label=Exception+
 
+*@fig:Exception*
+
 !!!!File
 
 +File>figures/File.eps|width=23|label=File+
+
+*@fig:File*
 
 !!!!FileAnchor
 
 +FileAnchor>figures/FileAnchor.eps|width=19|label=FileAnchor+
 
+*@fig:FileAnchor*
+
 !!!!FileInclude
 
 +FileInclude>figures/FileInclude.eps|width=56|label=FileInclude+
+
+*@fig:FileInclude*
 
 !!!!Folder
 
 +Folder>figures/Folder.eps|width=37|label=Folder+
 
+*@fig:Folder*
+
 !!!!Function
 
 +Function>figures/Function.eps|width=22|label=Function+
+
+*@fig:Function*
 
 !!!!GlobalVariable
 
 +GlobalVariable>figures/GlobalVariable.eps|width=27|label=GlobalVariable+
 
+*@fig:GlobalVariable*
+
 !!!!Header
 
 +Header>figures/Header.eps|width=20|label=Header+
+
+*@fig:Header*
 
 !!!!ImplicitVariable
 
 +ImplicitVariable>figures/ImplicitVariable.eps|width=34|label=ImplicitVariable+
 
+*@fig:ImplicitVariable*
+
 !!!!Invocable
 
 +Invocable>figures/Invocable.eps|width=63|label=Invocable+
+
+*@fig:Invocable*
 
 !!!!LCOMMetrics
 
 +LCOMMetrics>figures/LCOMMetrics.eps|width=17|label=LCOMMetrics+
 
+*@fig:LCOMMetrics*
+
 !!!!LocalVariable
 
 +LocalVariable>figures/LocalVariable.eps|width=33|label=LocalVariable+
+
+*@fig:LocalVariable*
 
 !!!!Method
 
 +Method>figures/Method.eps|width=23|label=Method+
 
+*@fig:Method*
+
 !!!!Module
 
 +Module>figures/Module.eps|width=26|label=Module+
+
+*@fig:Module*
 
 !!!!Named
 
 +Named>figures/Named.eps|width=16|label=Named+
 
+*@fig:Named*
+
 !!!!Namespace
 
 +Namespace>figures/Namespace.eps|width=49|label=Namespace+
+
+*@fig:Namespace*
 
 !!!!Package
 
 +Package>figures/Package.eps|width=25|label=Package+
 
+*@fig:Package*
+
 !!!!Parameter
 
 +Parameter>figures/Parameter.eps|width=36|label=Parameter+
+
+*@fig:Parameter*
 
 !!!!ParameterizedType
 
 +ParameterizedType>figures/ParameterizedType.eps|width=36|label=ParameterizedType+
 
+*@fig:ParameterizedType*
+
 !!!!ParameterizedTypeUser
 
 +ParameterizedTypeUser>figures/ParameterizedTypeUser.eps|width=47|label=ParameterizedTypeUser+
+
+*@fig:ParameterizedTypeUser*
 
 !!!!PossibleStub
 
 +PossibleStub>figures/PossibleStub.eps|width=17|label=PossibleStub+
 
+*@fig:PossibleStub*
+
 !!!!PreprocessorDefine
 
 +PreprocessorDefine>figures/PreprocessorDefine.eps|width=23|label=PreprocessorDefine+
+
+*@fig:PreprocessorDefine*
 
 !!!!PreprocessorIfdef
 
 +PreprocessorIfdef>figures/PreprocessorIfdef.eps|width=21|label=PreprocessorIfdef+
 
+*@fig:PreprocessorIfdef*
+
 !!!!Reference
 
 +Reference>figures/Reference.eps|width=50|label=Reference+
+
+*@fig:Reference*
 
 !!!!ScopingEntity
 
 +ScopingEntity>figures/ScopingEntity.eps|width=31|label=ScopingEntity+
 
+*@fig:ScopingEntity*
+
 !!!!SourceAnchor
 
 +SourceAnchor>figures/SourceAnchor.eps|width=46|label=SourceAnchor+
+
+*@fig:SourceAnchor*
 
 !!!!SourceLanguage
 
 +SourceLanguage>figures/SourceLanguage.eps|width=35|label=SourceLanguage+
 
+*@fig:SourceLanguage*
+
 !!!!Sub
 
 +Sub>figures/Sub.eps|width=14|label=Sub+
+
+*@fig:Sub*
 
 !!!!SubInheritance
 
 +SubInheritance>figures/SubInheritance.eps|width=30|label=SubInheritance+
 
+*@fig:SubInheritance*
+
 !!!!SuperInheritance
 
 +SuperInheritance>figures/SuperInheritance.eps|width=29|label=SuperInheritance+
+
+*@fig:SuperInheritance*
 
 !!!!Template
 
 +Template>figures/Template.eps|width=45|label=Template+
 
+*@fig:Template*
+
 !!!!ThrownException
 
 +ThrownException>figures/ThrownException.eps|width=32|label=ThrownException+
+
+*@fig:ThrownException*
 
 !!!!Type
 
 +Type>figures/Type.eps|width=63|label=Type+
 
+*@fig:Type*
+
 !!!!TypeAlias
 
 +TypeAlias>figures/TypeAlias.eps|width=24|label=TypeAlias+
+
+*@fig:TypeAlias*
 
 !!!!TypedStructure
 
 +TypedStructure>figures/TypedStructure.eps|width=39|label=TypedStructure+
 
+*@fig:TypedStructure*
+
 !!!!WithClassScope
 
 +WithClassScope>figures/WithClassScope.eps|width=20|label=WithClassScope+
+
+*@fig:WithClassScope*
 
 !!!!WithModifiers
 
 +WithModifiers>figures/WithModifiers.eps|width=17|label=WithModifiers+
 
+*@fig:WithModifiers*
+
 !!!!WithSignature
 
 +WithSignature>figures/WithSignature.eps|width=18|label=WithSignature+
+
+*@fig:WithSignature*
 
 
 
