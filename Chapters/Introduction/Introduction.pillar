@@ -5,22 +5,28 @@
 
 The idea behind FamixNG is to allow the creation of meta-models by composing basic entities rather than using single inheritance.
 
-Take for example a simple model with Classes and Methods. A Class has a ''name'' and ''contains'' methods. A Method has a ''name''. The Figure *@simpleHierarchy* shows a simple hierarchy of these classes.
+Take for example a simple inheritance model with Classes and Methods. A Class has a ''name'' and ''contains'' methods. Hence, Class inherits ContainerEntity that extends NamedEntity. A Method has a ''name'' and therefore is an extension of NamedEntity. The Figure *@fig:simpleHierarchy* shows a simple hierarchy of these classes.
 
 +A simple meta-model entities hierarchy.>figures/intro1.eps|width=35|label=fig:simpleHierarchy+
 
 However, if we introduce AnonymousClass we have a problem, it is a Class (thus a ContainerEntity, but it is not Named).
 With composition, we could say that there are named entities (that have a name) and there are container entities (that contain other entities). A Class is composed of NamedEntity and ContainerEntity, an AnonymousClass is a composition of ContainerEntity, and a Method is a composition of NamedEntity.
 
+@@todo Figure for the composition?
+
 FamixNG offers a collection of fundamental concepts (NamedEntities, ScopingEntities...) and a better mechanism to handle bi-directional associations to simplify the creation of new meta-models.
 
 !!!General Organisation
 @ch:ngPhilosophy
 
+@@todo refernces for stateful traits?
+
 The composition is implemented using Pharo (stateful) traits, and the concepts of the meta-model are implemented using Pharo classes.
-A new metamodel is generated using a *@Builder>ch:Builder* by telling it how the new concepts are composed and what are their relationships.
+A new meta-model is generated using a *@Builder>ch:Builder* by telling it how the new concepts are composed and what are their relationships.
 
 The FamixNG provides all fundamental concepts as a library of traits. When you create a custom meta-model, you compose the entities of your meta-models (represented by classes) from these traits. You may want to create own traits if you require reusability of a concept they provide.
+
+@@todo describe and illustarte bz figure layers: simple traits (predefined and custom), composed traits (predefined and custom), classes (predefined and custom), model and meta-model... Did I miss something? We can orgianize the Catalog (following section) according to this. 
 
 In the most basic usages, one should be able to create a new meta-model by composing the existing fundamental concepts without the need to create new ones.
 
